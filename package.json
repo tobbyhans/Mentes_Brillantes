@@ -1,0 +1,22 @@
+{
+  "name": "mentes-brillantes-fullstack",
+  "private": true,
+  "version": "3.2.6",
+  "type": "module",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB -c yellow,cyan \"npm run dev -w @mentes-brillantes/api\" \"npm run dev -w @mentes-brillantes/web\"",
+    "build": "npm run build -w @mentes-brillantes/web && npm run build -w @mentes-brillantes/api",
+    "start": "npm run start -w @mentes-brillantes/api",
+    "typecheck": "npm run typecheck -w @mentes-brillantes/web && npm run typecheck -w @mentes-brillantes/api",
+    "test": "npm run test -w @mentes-brillantes/api && npm run test -w @mentes-brillantes/web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
