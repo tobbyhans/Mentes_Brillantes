@@ -16,6 +16,8 @@ La API se sigue desarrollando en `apps/api/src/app.ts`, al igual que la versión
 
 El problema anterior, “application detection logic has been run in the root of a workspace”, se evita seleccionando explícitamente el Worker de `wrangler.jsonc`, que contiene `main` y `assets.directory`. `nodejs_compat` permite utilizar Express y `httpServerHandler` conecta su servidor al runtime Workers.
 
+**Corrección del error 10021 (iconv-lite):** el ciclo `postbuild` del `package.json` ejecuta automáticamente `scripts/fix-iconv-lite-workers.mjs`. El script retira únicamente los mapas de navegador incompatibles con los streams de Node.js en la copia **instalada** de `iconv-lite`, antes de que Wrangler empaquete el Worker. Mantén en Cloudflare los comandos existentes `npm ci && npm run build` y `npx --yes wrangler@latest deploy --config wrangler.jsonc`. No es necesario modificar el código de los juegos. La causa y el workaround están documentados en https://github.com/cloudflare/workers-sdk/issues/9309. Si vuelve a fallar, revisa que los registros incluyan `[Cloudflare] iconv-lite encontrado` y comparte el nuevo error.
+
 Si Cloudflare solicita la versión de Node.js para la compilación, utiliza Node 22 o posterior compatible con las dependencias de Vite. El comando de compilación debe instalar las dependencias de desarrollo de TypeScript y Vite.
 
 ## Pruebas
