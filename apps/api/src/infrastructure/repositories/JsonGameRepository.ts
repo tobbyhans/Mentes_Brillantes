@@ -4,7 +4,6 @@ import type { Game } from '../../domain/entities/Game.js';
 import { GAME_CATEGORIES } from '../../domain/entities/Game.js';
 import type { GameRepository } from '../../domain/repositories/GameRepository.js';
 
-const DEFAULT_FILE = fileURLToPath(new URL('../../../data/games.json', import.meta.url));
 const SLUG = /^[a-z0-9](?:[a-z0-9-]{0,63})$/;
 const ICON = /^[a-zA-Z][a-zA-Z0-9]{0,63}$/;
 const INTERNAL_ROUTE = /^\/juegos\/[a-z0-9](?:[a-z0-9-]{0,63})$/;
@@ -25,7 +24,7 @@ export const isGame = (data: unknown): data is Game => {
 };
 
 export class JsonGameRepository implements GameRepository {
-  constructor(private readonly filePath: string = DEFAULT_FILE) {}
+  constructor(private readonly filePath: string = fileURLToPath(new URL('../../../data/games.json', import.meta.url))) {}
   async findAll(): Promise<Game[]> {
     const parsed: unknown = JSON.parse(await readFile(this.filePath, 'utf8'));
     if (!Array.isArray(parsed) || !parsed.every(isGame) ||

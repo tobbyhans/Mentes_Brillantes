@@ -178,3 +178,8 @@ node --experimental-strip-types --test apps/web/tests/*.test.mjs
 ## Despliegue completo en Render
 
 Para publicar React (Vite) y Express juntos en un solo servicio web, sigue la guía [DEPLOY_RENDER.md](DEPLOY_RENDER.md). La configuración reproducible está en [render.yaml](render.yaml).
+
+
+## Despliegue completo en Cloudflare Workers
+
+Para publicar **React + Express en un mismo Worker**, consulta [DEPLOY_CLOUDFLARE.md](DEPLOY_CLOUDFLARE.md) y la configuración [wrangler.jsonc](wrangler.jsonc). El despliegue en Render es una alternativa independiente.
