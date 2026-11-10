@@ -1,0 +1,11 @@
+# React (Vite) + Express in a single Render web service.
+# Deploy via Render Dashboard > New > Blueprint.
+services:
+  - type: web
+    name: mentes-brillantes-fullstack
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health

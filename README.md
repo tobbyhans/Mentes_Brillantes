@@ -173,3 +173,8 @@ node --experimental-strip-types --test apps/web/tests/*.test.mjs
 ```
 
 **Nota:** la CSP del proyecto permite estilos inline porque las posiciones y animaciones actuales de React los usan; el JavaScript inline, en cambio, queda bloqueado. Es una medida pragmática, no una CSP de máxima restricción.
+
+
+## Despliegue completo en Render
+
+Para publicar React (Vite) y Express juntos en un solo servicio web, sigue la guía [DEPLOY_RENDER.md](DEPLOY_RENDER.md). La configuración reproducible está en [render.yaml](render.yaml).
