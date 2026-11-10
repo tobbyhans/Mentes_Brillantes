@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="172" viewBox="0 0 560 172" role="img" aria-label="Dibujos infantiles de exploración">
+ <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+ <g stroke="#82a4a2" stroke-width="2.7" opacity=".72"><path d="M11 151 Q80 141 141 151 T267 151 T403 151 T548 151" stroke-dasharray="8 9"/><path d="M23 56 q15 -20 34 0 q15 -18 29 0"/><path d="M423 32 q13 -15 26 0 q11 -12 25 0"/><path d="M480 62 q9 -12 19 0 q11 -9 21 0"/></g>
+ <!-- avión de papel -->
+ <g transform="translate(370 8) rotate(-8 62 23)" stroke="#477b95" stroke-width="3"><path d="M11 33 L116 4 L79 35 L64 58 L57 35Z" fill="#ecf7f8"/><path d="M57 35 L79 35 L116 4"/><path d="M11 33 L57 35" stroke="#db785f"/><path d="M64 58 L66 34" stroke="#62a48a"/></g>
+ <!-- montañas y glaciares -->
+ <g stroke="#5d7e80" stroke-width="2.4" ><path d="M232 121 L275 60 L312 110 L345 72 L375 121Z" fill="#ddebe5"/><path d="M275 60 L261 81 L276 78 L290 85 L284 74 L275 60M345 72 L331 94 L343 89 L353 95Z" fill="#fafcf7"/><path d="M239 121 Q267 116 287 121 T344 121" stroke="#6c9ca9"/></g>
+ <!-- barco de vela -->
+ <g transform="translate(20 81)" stroke="#486c78" stroke-width="2.7"><path d="M3 50 L112 50 L95 67 L22 67Z" fill="#197eaf"/><path d="M60 46 L60 0" stroke="#ad7050"/><path d="M56 5 L56 45 L22 45Z" fill="#f4c34f"/><path d="M64 8 L103 42 L64 42Z" fill="#f6eee0"/><path d="M2 75 q12 -7 24 0 t24 0 t24 0 t24 0" stroke="#5ba7ac"/><path d="M7 84 q12 -6 22 0 t21 0 t21 0 t22 0" stroke="#6aaeb4"/></g>
+ <!-- tren de juguete -->
+ <g transform="translate(140 109)" stroke="#4a6971" stroke-width="2.5"><path d="M0 29 H90" stroke="#7c8c7c" stroke-dasharray="7 5"/><path d="M12 20 V0 H52 V20Z" fill="#e48765"/><path d="M52 20 V8 H77 V20Z" fill="#559fac"/><path d="M18 6 H29 V14 H18ZM35 6 H46 V14 H35Z" fill="#fff6e4"/><path d="M15 23 h65"/><circle cx="24" cy="24" r="7" fill="#364e5c"/><circle cx="51" cy="24" r="7" fill="#364e5c"/><circle cx="72" cy="24" r="7" fill="#364e5c"/><path d="M8 -7 q-7 -6 -1 -12 M23 -7 q-7 -6 -1 -12" stroke="#9fb9b4"/></g>
+ <!-- pequeño iglú -->
+ <g transform="translate(468 91)" stroke="#6695a4" stroke-width="2.6"><path d="M3 51 A41 41 0 0 1 85 51Z" fill="#f5fcfa"/><path d="M36 51 V34 Q46 23 56 34 V51" fill="#cbe6e7"/><path d="M18 28 L74 28 M8 41 H30 M59 41 H84 M45 11 V23 M24 18 L34 28 M61 18 L55 28"/></g>
+ <!-- detalles de lápiz -->
+ <g fill="#dfa64c" stroke="#b98039" stroke-width="1.6"><path d="M119 17 l4 9 10 2 -9 4 -1 9 -5 -8 -9 -3 9 -3Z"/><path d="M315 14 l3 6 7 2 -6 3 -1 6 -3 -5 -6 -3 6 -3Z"/></g>
+ </g>
+</svg>

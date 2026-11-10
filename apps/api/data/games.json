@@ -1,0 +1,92 @@
+[
+  {
+    "id": "robot-al-rescate",
+    "title": "Robot al rescate",
+    "category": "Tecnología",
+    "icon": "robot",
+    "description": "",
+    "status": "coming-soon",
+    "route": null,
+    "order": 1
+  },
+  {
+    "id": "come-tartas",
+    "title": "Come Tartas",
+    "category": "Ciencia",
+    "icon": "cakeQuiz",
+    "description": "Preguntas visuales, tres niveles de edad y tartas para coleccionar.",
+    "status": "available",
+    "route": "/juegos/come-tartas",
+    "order": 2
+  },
+  {
+    "id": "viaje-a-marte",
+    "title": "Viaje a Marte",
+    "category": "Ciencia",
+    "icon": "rocket",
+    "description": "",
+    "status": "coming-soon",
+    "route": null,
+    "order": 3
+  },
+  {
+    "id": "codigo-secreto",
+    "title": "Código secreto",
+    "category": "Tecnología",
+    "icon": "code",
+    "description": "",
+    "status": "coming-soon",
+    "route": null,
+    "order": 4
+  },
+  {
+    "id": "el-gran-puente",
+    "title": "El gran puente",
+    "category": "Ingeniería",
+    "icon": "bridge",
+    "description": "",
+    "status": "coming-soon",
+    "route": null,
+    "order": 5
+  },
+  {
+    "id": "serpientes-y-escaleras",
+    "title": "Escaleras y serpientes",
+    "category": "Matemáticas",
+    "icon": "snakesLadders",
+    "description": "Resuelve operaciones para avanzar o retroceder.",
+    "status": "available",
+    "route": "/juegos/serpientes-y-escaleras",
+    "order": 6
+  },
+  {
+    "id": "tira-y-afloja",
+    "title": "Tira Tira",
+    "category": "Matemáticas",
+    "icon": "tiraTira",
+    "description": "Dos equipos tiran de la cuerda resolviendo operaciones.",
+    "status": "available",
+    "route": "/juegos/tira-tira",
+    "order": 7
+  },
+  {
+    "id": "artista-de-pixeles",
+    "title": "Artista de píxeles",
+    "category": "Arte",
+    "icon": "art",
+    "description": "",
+    "status": "coming-soon",
+    "route": null,
+    "order": 8
+  },
+  {
+    "id": "musica-de-colores",
+    "title": "Música de colores",
+    "category": "Arte",
+    "icon": "music",
+    "description": "",
+    "status": "coming-soon",
+    "route": null,
+    "order": 9
+  }
+]

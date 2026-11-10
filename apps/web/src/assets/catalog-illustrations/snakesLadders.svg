@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 135" role="img" aria-label="Tablero de escaleras y serpientes con dado">
+        <!-- Casillas cuadradas y tablero con líneas finas -->
+        <g transform="translate(10 16)">
+          <rect x="2" y="2" width="112" height="104" rx="2" fill="#fdfcf8" stroke="#282e2b" stroke-width="1.7"/>
+          <path d="M39.3 2v104M76.7 2v104M2 36.7h112M2 71.3h112" stroke="#d9d7ce" stroke-width="1.4"/>
+          <rect x="2" y="71.3" width="37.3" height="34.7" fill="#e3b64f" opacity=".65"/>
+          <rect x="76.7" y="2" width="37.3" height="34.7" fill="#497d98" opacity=".24"/>
+          <!-- Escalera naranja diagonal, con peldaños -->
+          <path d="M27 90 67 15M43 98 83 23" stroke="#db6447" stroke-width="4" stroke-linecap="round"/>
+          <path d="M33 78 49 87M40 65 56 74M47 52 63 61M54 39 70 48M61 26 77 35" stroke="#db6447" stroke-width="3" stroke-linecap="round"/>
+          <!-- Serpiente estilizada, como un trazo de rotulador -->
+          <path d="M103 22C76 33 112 50 93 61S77 74 95 82" fill="none" stroke="#497d98" stroke-width="8" stroke-linecap="round"/>
+          <circle cx="103" cy="22" r="8" fill="#497d98"/><circle cx="106" cy="20" r="1.8" fill="#fdfcf8"/>
+          <path d="m101 84-4 6m-2-8-4 3" stroke="#497d98" stroke-width="1.8" stroke-linecap="round"/>
+        </g>
+        <!-- Dado decorativo -->
+        <g transform="translate(131 72) rotate(13 16 16)"><rect width="35" height="35" rx="4" fill="#fdfcf8" stroke="#282e2b" stroke-width="1.6"/><circle cx="9" cy="9" r="2.9" fill="#db6447"/><circle cx="26" cy="9" r="2.9" fill="#db6447"/><circle cx="17.5" cy="17.5" r="2.9" fill="#db6447"/><circle cx="9" cy="26" r="2.9" fill="#db6447"/><circle cx="26" cy="26" r="2.9" fill="#db6447"/></g>
+        <path d="m142 28 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z" fill="#e3b64f"/><circle cx="163" cy="17" r="3" fill="#db6447"/>
+      </svg>

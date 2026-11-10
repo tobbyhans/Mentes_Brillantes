@@ -1,0 +1,203 @@
+.cake-page{--cake-ink:#282c2a;--cake-cream:#f9f7f0;--cake-paper:#fdfcf8;--cake-blue:#497d98;--cake-pink:#d95580;--cake-orange:#db6447;--cake-yellow:#e3b64f;--cake-muted:#747973;min-height:100vh;color:var(--cake-ink);font-family:'Trebuchet MS','Avenir Next',Avenir,system-ui,sans-serif;background:#fbfaf7;background-image:linear-gradient(to right,#e6e5e0 1px,transparent 1px),linear-gradient(to bottom,#e6e5e0 1px,transparent 1px);background-size:24px 24px}
+.cake-page *{box-sizing:border-box}
+.cake-page button{font:inherit;cursor:pointer}
+.cake-page button:focus-visible,.cake-page a:focus-visible{outline:3px solid var(--cake-blue);outline-offset:3px}
+.cake-shell{width:calc(100% - clamp(18px,3vw,56px));max-width:1560px;margin:auto;padding:14px 0 26px}
+.cake-topline{min-height:41px;display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:6px}
+.cake-back{border:1.5px solid var(--cake-ink);border-radius:99px;background:var(--cake-paper);color:var(--cake-ink);padding:9px 16px;font-size:12px;font-weight:850;text-decoration:none}
+.cake-mini,.cake-kicker,.cake-overline{font-size:11px;letter-spacing:.17em;font-weight:950;color:var(--cake-blue);text-transform:uppercase}
+.cake-mini{color:#8a8d82}
+.cake-header{min-height:98px;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px clamp(14px,2.5vw,28px);background:var(--cake-cream);border-bottom:1px solid #ded9cf;margin-bottom:18px}
+.cake-brand{display:flex;align-items:center;gap:15px}
+.cake-logo{width:70px;height:70px;border:1.5px solid var(--cake-ink);border-radius:12px;background:#fffdfa;display:grid;place-items:center;box-shadow:3px 4px 0 #e8dcbc;font-size:40px;transform:rotate(-3deg)}
+.cake-brand h1{margin:2px 0 0;font-size:clamp(1.5rem,2.6vw,2.35rem);line-height:1.05;letter-spacing:-.065em;font-weight:1000}
+.cake-brand h1 span{color:var(--cake-pink)}
+.cake-brand p{margin:5px 0 0;color:var(--cake-muted);font-size:.79rem;font-weight:650}
+.cake-header-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.cake-sound,.cake-outline-button{background:#fffdfa;border:1.5px solid #d5d0c5;border-radius:99px;padding:11px 15px;font-size:.9rem!important;font-weight:900!important;color:var(--cake-ink)}
+.cake-sound.active{color:var(--cake-blue);background:#eff5f4;border-color:#9eb4b9}
+.cake-start-layout,.cake-game-layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:18px;align-items:stretch}
+.cake-intro-card,.cake-setup-card,.cake-quiz-panel,.cake-progress-panel{min-width:0;background:var(--cake-paper);border:1.5px solid #d9d4c9;border-radius:16px;box-shadow:5px 6px 0 #e7e2d8;padding:clamp(17px,2.3vw,30px)}
+.cake-intro-card{display:flex;flex-direction:column;min-height:590px;position:relative;overflow:hidden;border-top:5px solid var(--cake-yellow)}
+.cake-intro-card h2,.cake-setup-card h2,.cake-quiz-top h2,.cake-progress-heading h2{font-size:clamp(1.45rem,2.2vw,2rem);letter-spacing:-.06em;line-height:1.16;margin:8px 0 10px;color:var(--cake-ink)}
+.cake-intro-card>p,.cake-setup-card>p{max-width:490px;line-height:1.55;font-size:.93rem;color:var(--cake-muted);margin:0 0 19px}
+.cake-intro-art{flex:1;min-height:290px;border:1.5px dashed #d7c9af;border-radius:15px;background:radial-gradient(circle at center,#fff6df,#f9f6ef 65%);position:relative;display:grid;place-items:center;margin-top:13px}
+.cake-intro-art .cake-visual{width:min(76%,350px);height:auto;filter:drop-shadow(0 12px 0 #a7a49e23)}
+.cake-doodle{position:absolute;color:var(--cake-orange);font-size:35px}.cake-doodle.a{top:12%;left:12%}.cake-doodle.b{bottom:10%;left:16%;color:var(--cake-pink)}.cake-doodle.c{top:18%;right:15%;color:var(--cake-blue)}
+.cake-intro-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:#607d78;font-size:12px;font-weight:900;margin-top:18px}
+.cake-setup-card{border-top:5px solid var(--cake-blue)}
+.cake-age-options{display:grid;gap:11px;margin:24px 0}
+.cake-age-card{display:flex;gap:15px;text-align:left;align-items:center;width:100%;border:1.5px solid #d9d4c9;border-radius:11px;padding:15px;background:#fffdfa;transition:transform .18s,border-color .18s,background .18s}
+.cake-age-card:hover{transform:translateY(-2px);border-color:var(--cake-blue)}
+.cake-age-card.selected{background:#ebf2f1;border:2px solid var(--cake-blue);padding:14.5px;box-shadow:inset 0 0 0 1px #a6c3c6}
+.cake-age-emoji{font-size:2.1rem;width:47px;flex:none;text-align:center}
+.cake-age-body{display:flex;flex:1;min-width:0;flex-direction:column;gap:2px}.cake-age-body strong{font-size:1.08rem}.cake-age-name{font-size:.87rem;font-weight:850;color:var(--cake-blue)}.cake-age-body small{color:var(--cake-muted);font-size:.77rem;line-height:1.35}
+.cake-radio{flex:none;display:grid;place-items:center;width:23px;height:23px;border:2px solid #c2cac6;border-radius:50%;font-size:13px;font-weight:1000;color:white}.selected .cake-radio{border-color:var(--cake-blue);background:var(--cake-blue)}
+.cake-primary{border:1.5px solid #282c2a;border-radius:11px;box-shadow:5px 5px 0 var(--cake-yellow);background:#282c2a;color:white;font-size:1.02rem!important;font-weight:950!important;min-height:54px;padding:12px 16px;width:100%;transition:transform .15s,box-shadow .15s}
+.cake-primary:hover{background:#414a43;transform:translate(-1px,-2px);box-shadow:6px 7px 0 var(--cake-yellow)}
+.cake-setup-note{text-align:center!important;font-size:.75rem!important;margin:19px 0 0!important;max-width:none!important}
+.cake-quiz-panel{border-top:5px solid var(--cake-blue)}.cake-progress-panel{border-top:5px solid var(--cake-yellow)}
+.cake-quiz-top{display:flex;align-items:flex-start;justify-content:space-between;gap:13px}.cake-quiz-top h2{margin-top:5px}.cake-level-tag{background:#f8edda;border:1px solid var(--cake-yellow);padding:9px 13px;border-radius:99px;color:#8b642e;font-size:.73rem;font-weight:950;white-space:nowrap}
+.cake-question-art{height:210px;background:#f7f5ec;border:1.5px dashed #d5cabb;border-radius:12px;display:grid;place-items:center;position:relative;margin:6px 0 19px}.cake-question-art>svg{height:195px;width:min(100%,255px)}.cake-art-star{position:absolute;right:12%;top:15%;color:var(--cake-orange);font-size:28px}
+.cake-question-text{font-size:clamp(1.2rem,1.65vw,1.6rem);letter-spacing:-.035em;text-align:center;line-height:1.35;margin:12px 0 19px;min-height:55px}
+.cake-answer-options{display:grid;gap:10px}
+.cake-option{display:flex;align-items:center;text-align:left;gap:12px;width:100%;min-height:67px;padding:12px 14px;border:1.5px solid #d9d4c9;border-radius:12px;background:#fffdf8;color:var(--cake-ink);font-weight:900!important;font-size:1rem!important;transition:background .15s,transform .12s,border .15s}
+.cake-option:not(:disabled):hover{background:#f0f5f4;border-color:var(--cake-blue);transform:translateX(3px)}
+.cake-option:disabled{cursor:default;opacity:1}.cake-option.right{background:#e7f4e9;border-color:#66a77f}.cake-option.wrong{background:#fde9eb;border-color:#d95580}
+.cake-option-number{background:#e2eaec;color:var(--cake-blue);width:34px;height:34px;border-radius:9px;display:grid;place-items:center;flex:none}.cake-option.right .cake-option-number{background:#69ad7d;color:white}.cake-option.wrong .cake-option-number{background:var(--cake-pink);color:white}
+.cake-option-mark{margin-left:auto;font-size:1.35rem;color:#91988f}.cake-option.right .cake-option-mark{color:#34835e}.cake-option.wrong .cake-option-mark{color:#c43d67}
+.cake-progress-heading h2{margin:7px 0 16px}.cake-scoreboard{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.cake-scoreboard>div{border:1px solid #e0d9cd;border-radius:11px;background:#f8f6ef;padding:10px 6px;text-align:center}.cake-scoreboard span{display:block;color:#707871;font-size:.7rem;font-weight:900}.cake-scoreboard strong{display:block;color:var(--cake-blue);font-size:1.6rem;font-weight:1000;margin-top:2px}
+.cake-plate{margin:16px 0 0;text-align:center;background:radial-gradient(circle at 50% 44%,#fff5db,#fdfbf6 69%);border:1px dashed #e3d7c2;border-radius:15px;padding:10px 10px 13px}.cake-visual{display:block;width:min(100%,292px);height:auto;margin:0 auto}.cake-visual.cake-celebrate{animation:cake-pop .6s ease both}.cake-cake-label{font-weight:1000;color:#775e43;font-size:.93rem;margin:0 0 9px}.cake-slices{display:grid;grid-template-columns:repeat(6,1fr);gap:5px;margin:8px auto;max-width:305px}.cake-slices span{height:10px;border:1px solid #d9cec0;border-radius:99px;background:#ede5d8}.cake-slices span.eaten{background:var(--cake-pink);border-color:#be5175}.cake-plate p{margin:7px 0 0;font-size:.75rem;color:#777a73;font-weight:850}
+.cake-achievements{margin-top:19px}.cake-achievements h3{font-size:1.02rem;margin:0 0 10px}.cake-no-reward,.cake-reward{background:#fffaf0;border:1px solid #e5d8bc;border-radius:9px;padding:13px;color:#88714e;font-size:.81rem;font-weight:800;line-height:1.4}.cake-reward-list{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.cake-reward{display:flex;align-items:center;gap:8px;color:var(--cake-ink)}.cake-reward>span:first-child{font-size:1.5rem}
+@keyframes cake-pop{0%{transform:scale(.96);opacity:.7}65%{transform:scale(1.02)}100%{transform:scale(1);opacity:1}}
+@media(max-width:850px){.cake-start-layout,.cake-game-layout{grid-template-columns:1fr}.cake-intro-card{min-height:0}.cake-intro-art{min-height:230px}.cake-header{flex-wrap:wrap}.cake-header-actions{width:100%}}
+@media(max-width:490px){.cake-shell{width:calc(100% - 18px)}.cake-topline{flex-wrap:wrap}.cake-mini{font-size:.55rem}.cake-header{padding:12px}.cake-logo{height:52px;width:52px;font-size:30px}.cake-overline{font-size:.53rem}.cake-brand h1{font-size:1.55rem}.cake-brand p{font-size:.68rem}.cake-sound,.cake-outline-button{font-size:.77rem!important;padding:8px 11px}.cake-intro-card,.cake-setup-card,.cake-quiz-panel,.cake-progress-panel{padding:16px}.cake-quiz-top h2{font-size:1.5rem}.cake-question-art{height:170px}.cake-question-art>svg{height:160px}.cake-scoreboard strong{font-size:1.3rem}.cake-reward-list{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.cake-page *, .cake-page *:before,.cake-page *:after{animation:none!important;transition:none!important}}
+
+/* Personaje pastelero: se mueve al acertar una respuesta. */
+.cake-intro-art .cake-mascot{position:absolute;left:8%;bottom:7%;width:clamp(90px,22%,142px);transform:rotate(-6deg);filter:drop-shadow(2px 5px 0 #d5c5a44b)}
+.cake-feast{display:flex;align-items:center;justify-content:center;gap:0;position:relative;min-height:242px}
+.cake-feast .cake-visual{width:min(72%,235px);flex:0 1 235px;max-width:235px;margin:0 -4px 0 -6px}
+.cake-feast .cake-mascot{width:min(37%,125px);flex:0 1 125px;max-width:125px;filter:drop-shadow(2px 3px 0 #bbad985c)}
+.cake-mascot-eating{animation:cake-chef-bite .6s ease-in-out}
+.cake-mascot-eating .cake-mascot-fork{animation:cake-fork-up .5s ease-in-out;transform-origin:145px 110px}
+@keyframes cake-chef-bite{0%{transform:rotate(0)}25%{transform:rotate(8deg) translateY(-5px)}60%{transform:rotate(-4deg) translateY(3px)}100%{transform:rotate(0)}}
+@keyframes cake-fork-up{0%{transform:rotate(0)}40%{transform:rotate(-32deg)}100%{transform:rotate(0)}}
+@media(max-width:490px){.cake-feast{min-height:180px}.cake-feast .cake-visual{max-width:190px}.cake-feast .cake-mascot{max-width:92px}}
+
+/* v3.2.2 — Vista de partida alineada con Tira Tira.
+   La tarta y el personaje quedan a la izquierda; las preguntas y tres
+   respuestas quedan a la derecha. Colores y componentes del home. */
+.cake-page .cake-game-layout {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.04fr);
+  gap: clamp(12px, 1.4vw, 20px);
+  align-items: start;
+}
+.cake-page .cake-game-layout .cake-progress-panel {
+  grid-column: 1;
+  grid-row: 1;
+  border-top: 5px solid var(--cake-yellow);
+}
+.cake-page .cake-game-layout .cake-quiz-panel {
+  grid-column: 2;
+  grid-row: 1;
+  border-top: 5px solid var(--cake-blue);
+}
+.cake-page .cake-game-layout .cake-progress-panel,
+.cake-page .cake-game-layout .cake-quiz-panel {
+  border-radius: 12px;
+  background: var(--cake-paper);
+  border-left: 1.5px solid #d9d5cb;
+  border-right: 1.5px solid #d9d5cb;
+  border-bottom: 1.5px solid #d9d5cb;
+  box-shadow: 5px 6px 0 #e7e2d8;
+}
+.cake-page .cake-progress-heading,
+.cake-page .cake-quiz-top {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e4ded2;
+  margin-bottom: 15px;
+}
+.cake-page .cake-scoreboard > div {
+  border-radius: 10px;
+  background: #f7f4ed;
+}
+.cake-page .cake-scoreboard > div:first-child strong { color: var(--cake-blue); }
+.cake-page .cake-scoreboard > div:nth-child(2) strong { color: var(--cake-pink); }
+.cake-page .cake-scoreboard > div:nth-child(3) strong { color: #55866b; }
+.cake-page .cake-plate {
+  background: linear-gradient(160deg, #fff8e8, #fffdf8);
+  border-radius: 12px;
+  border: 1.5px dashed #decba8;
+  padding: 22px 14px 18px;
+  margin-top: 15px;
+}
+.cake-page .cake-feast {min-height: 278px;}
+.cake-page .cake-feast .cake-visual {width: min(71%, 290px);max-width:290px;flex-basis:290px;}
+.cake-page .cake-feast .cake-mascot {width: min(37%,145px);max-width:145px;flex-basis:145px;}
+.cake-page .cake-question-art {
+  background: #fcf8ed;
+  border: 1.5px dashed #d5cabb;
+  border-radius: 10px;
+  margin-top: 0;
+}
+.cake-page .cake-question-text {font-size:clamp(1.25rem, 1.8vw, 1.8rem);}
+.cake-page .cake-option {
+  border-radius: 10px;
+  background: #fffefa;
+  border: 1.5px solid #ddd8ce;
+  min-height: 69px;
+}
+.cake-page .cake-option:not(:disabled):hover {background: #edf3f1;border-color: var(--cake-blue);}
+.cake-page .cake-option.right {background:#e7f4e9;border-color:#66a77f;}
+.cake-page .cake-option.wrong {background:#fde9eb;border-color:var(--cake-pink);}
+/* En móvil, las preguntas aparecen antes para no tener que desplazarse
+   por el marcador y la tarta antes de responder. */
+@media (max-width: 850px) {
+  .cake-page .cake-game-layout {grid-template-columns:minmax(0,1fr);}
+  .cake-page .cake-game-layout .cake-quiz-panel {
+    grid-column:1;
+    grid-row:1;
+  }
+  .cake-page .cake-game-layout .cake-progress-panel {
+    grid-column:1;
+    grid-row:2;
+  }
+  .cake-page .cake-feast {min-height:190px;}
+  .cake-page .cake-feast .cake-visual {max-width:230px;flex-basis:230px;}
+  .cake-page .cake-feast .cake-mascot {max-width:118px;flex-basis:118px;}
+}
+@media (max-width: 490px) {
+  .cake-page .cake-option {min-height:58px;padding:10px;}
+  .cake-page .cake-question-art {height:168px;}
+  .cake-page .cake-feast {min-height:170px;}
+}
+
+/* v3.2.5 — Panel de preguntas compacto y sin sugerencias tras responder.
+   Botones táctiles claros, resultado solo sobre la opción seleccionada. */
+.cake-page .cake-game-layout {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.04fr);
+  gap: clamp(10px, 1.2vw, 18px);
+}
+.cake-page .cake-game-layout .cake-quiz-panel,
+.cake-page .cake-game-layout .cake-progress-panel {
+  padding: clamp(13px, 1.5vw, 22px);
+}
+.cake-page .cake-quiz-top {padding-bottom: 9px;margin-bottom: 11px;}
+.cake-page .cake-quiz-top h2 {font-size:clamp(1.35rem, 1.9vw, 1.8rem);margin:5px 0 0;}
+.cake-page .cake-level-tag {padding:7px 11px;}
+.cake-page .cake-question-art {height:clamp(125px, 17vh, 165px);margin:0 0 10px;}
+.cake-page .cake-question-art > svg {height: min(95%, 152px);width:min(100%, 195px);}
+.cake-page .cake-question-text {min-height:0;margin:9px 0 14px;font-size:clamp(1.14rem, 1.55vw, 1.48rem);line-height:1.25;}
+.cake-page .cake-answer-options {gap:8px;}
+.cake-page .cake-option {
+  min-height:56px;padding:8px 12px;gap:12px;border-radius:10px;
+  font-size:clamp(.95rem, 1vw, 1.06rem)!important;
+}
+.cake-page .cake-option-number {height:32px;width:32px;}
+.cake-page .cake-option:disabled:not(.right):not(.wrong) {opacity:.78;}
+.cake-page .cake-next-question {
+  margin-top:12px;min-height:48px;padding:10px 16px;
+  font-size:.97rem!important;display:flex;align-items:center;justify-content:center;gap:10px;
+}
+.cake-page .cake-progress-heading h2 {margin:6px 0 12px;}
+.cake-page .cake-progress-heading {padding-bottom:8px;margin-bottom:12px;}
+.cake-page .cake-plate {padding:14px 12px;margin-top:12px;}
+.cake-page .cake-feast {min-height:210px;}
+.cake-page .cake-feast .cake-visual {max-width:245px;flex-basis:245px;}
+.cake-page .cake-feast .cake-mascot {max-width:124px;flex-basis:124px;}
+.cake-page .cake-achievements {margin-top:13px;}
+@media(max-width:850px) {
+  .cake-page .cake-game-layout {grid-template-columns:minmax(0,1fr);}
+  .cake-page .cake-game-layout .cake-quiz-panel {grid-column:1;grid-row:1;}
+  .cake-page .cake-game-layout .cake-progress-panel {grid-column:1;grid-row:2;}
+  .cake-page .cake-question-art {height:clamp(130px,22vh,178px);}
+}
+@media(max-width:490px) {
+  .cake-page .cake-game-layout .cake-quiz-panel,
+  .cake-page .cake-game-layout .cake-progress-panel {padding:12px;}
+  .cake-page .cake-option {min-height:56px;padding:9px 10px;}
+  .cake-page .cake-question-text {font-size:1.19rem;}
+  .cake-page .cake-level-tag {font-size:.65rem;padding:6px 9px;}
+  .cake-page .cake-feast {min-height:165px;}
+}

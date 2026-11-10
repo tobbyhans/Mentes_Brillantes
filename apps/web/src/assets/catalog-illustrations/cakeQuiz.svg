@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 135" role="img" aria-label="Dos equipos responden preguntas para llegar a una tarta">
+        <!-- Equipo naranja: personaje geométrico con bocadillo de pregunta -->
+        <g stroke-linecap="round" stroke-linejoin="round">
+          <rect x="8" y="9" width="32" height="25" rx="6" fill="#fdfcf8" stroke="#282e2b" stroke-width="1.7"/>
+          <path d="m26 34-5 7-1-8" fill="#fdfcf8" stroke="#282e2b" stroke-width="1.5"/>
+          <text x="24" y="28" font-family="Trebuchet MS, sans-serif" font-weight="bold" font-size="19" text-anchor="middle" fill="#db6447">?</text>
+          <circle cx="29" cy="64" r="13" fill="#db6447"/>
+          <path d="M29 78 13 109h32Z" fill="#db6447"/>
+          <path d="M29 83 49 76M20 107l-7 12M38 107l8 12" fill="none" stroke="#282e2b" stroke-width="2.6"/>
+          <circle cx="49" cy="76" r="3.3" fill="#e3b64f"/>
+          <circle cx="34" cy="64" r="1.7" fill="#282e2b"/>
+          <path d="M13 120h12M42 120h11" stroke="#db6447" stroke-width="3.4"/>
+          <!-- Equipo azul: personaje cuadrado -->
+          <rect x="142" y="9" width="30" height="25" rx="6" fill="#fdfcf8" stroke="#282e2b" stroke-width="1.7"/>
+          <path d="m157 34 5 7 2-8" fill="#fdfcf8" stroke="#282e2b" stroke-width="1.5"/>
+          <text x="157" y="28" font-family="Trebuchet MS, sans-serif" font-weight="bold" font-size="19" text-anchor="middle" fill="#497d98">?</text>
+          <rect x="140" y="51" width="25" height="25" rx="3" fill="#497d98"/>
+          <path d="M141 79h25v30h-25Z" fill="#497d98"/>
+          <path d="M144 84 126 76M145 109l-9 11M161 109l9 11" stroke="#282e2b" stroke-width="2.6" fill="none"/>
+          <circle cx="126" cy="76" r="3.3" fill="#e3b64f"/>
+          <circle cx="146" cy="62" r="1.7" fill="#fdfcf8"/>
+          <path d="M130 120h13M163 120h13" stroke="#497d98" stroke-width="3.4"/>
+          <!-- La meta: una porción de tarta, con nata y una cereza -->
+          <path d="M69 102h44" stroke="#282e2b" stroke-width="2"/>
+          <path d="M75 78h32l5 22H70Z" fill="#e3b64f" stroke="#282e2b" stroke-width="1.5"/>
+          <path d="M74 79q6-12 12-3t12-1q5-5 9 3" fill="#fdfcf8" stroke="#282e2b" stroke-width="1.7"/>
+          <path d="M72 89h36" stroke="#db6447" stroke-width="4"/>
+          <circle cx="91" cy="63" r="6" fill="#db6447"/>
+          <path d="M91 58q1-8 6-11" fill="none" stroke="#282e2b" stroke-width="1.6"/>
+          <!-- Casillas de avance hacia la tarta -->
+          <circle cx="58" cy="112" r="3.3" fill="#db6447"/><circle cx="67" cy="112" r="2.7" fill="#e3b64f"/>
+          <circle cx="122" cy="112" r="3.3" fill="#497d98"/><circle cx="113" cy="112" r="2.7" fill="#e3b64f"/>
+          <path d="m63 50 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z" fill="#e3b64f"/>
+          <path d="m120 44 2 4 4 2-4 2-2 4-2-4-4-2 4-2Z" fill="#db6447"/>
+        </g>
+      </svg>

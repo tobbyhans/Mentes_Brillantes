@@ -1,0 +1,113 @@
+/* ============================================================
+   CUADERNO DE AVENTURAS · TEMA COMPARTIDO CON TIRA Y AFLOJA
+   Papel cálido, trazo de rotulador y vehículos dibujados a mano.
+   Solo presentación: no modifica el motor matemático ni las reglas.
+   ============================================================ */
+.snakes-page { --ink: #284756; --muted-ink: #648487; --blue-crayon:#178cbd; --pink-crayon:#d95580; --paper:#fffdf5; --stroke:#688486; color:var(--ink); background:#f3eddf; }
+.snakes-page .app-shell {
+  background-image: radial-gradient(circle at 50% -15%, #fffff5d9 0 13%, transparent 55%), radial-gradient(#839b7b1d 1px, transparent 1px), linear-gradient(165deg, #eef8ef, #f9edd6 76%, #eef3e5);
+  background-size:auto, 25px 25px, auto;
+  padding: 15px 20px 27px;
+}
+.snakes-page .app-inner { max-width:1570px; }
+.snakes-page .site-header { position:relative; border-bottom: 2px dashed #91afa783; padding:0 4px 13px; margin-bottom: 14px; overflow:hidden; }
+.snakes-page .brand-wrap, .snakes-page .header-actions { position:relative; z-index:2; }
+.snakes-page .brand-icon { min-width:74px; height:66px; border:2px solid #6f9a99; border-radius:17px 21px 16px 23px; background:#fff8e9; box-shadow:3px 4px 0 #d3dcbc; transform:rotate(-2deg); }
+.snakes-page .brand-copy h1 { color:#31516a; text-shadow:1px 2px 0 #fff9e5; letter-spacing:-.043em; }
+.snakes-page .brand-copy h1::first-letter { color:#118cb7; }
+.snakes-page .title-and { color:#e35380; }
+.snakes-page .brand-eyebrow, .snakes-page .brand-accent, .snakes-page .panel-kicker { color:#89755d; letter-spacing:.13em; }
+.snakes-page .brand-accent { color:#348f98; }
+.snakes-page .header-art { position:absolute; z-index:0; right:265px; bottom:-5px; width: min(32%, 305px); height:auto; opacity:.9; pointer-events:none; filter:drop-shadow(0 3px 2px #b9c3b04a); }
+.snakes-page .sound-btn, .snakes-page .settings-btn { border:2px solid #b7cfc9; color:#4c7079; background:#fffdf5; border-radius:12px 16px 12px 18px; box-shadow:3px 4px 0 #c7d8ca; }
+.snakes-page .sound-btn.enabled { color:#176f91; background:#eaf8f3; border-color:#80b8b4; }
+.snakes-page .sound-btn:active, .snakes-page .settings-btn:active { transform:translateY(2px); box-shadow:1px 2px 0 #b4cbbd; }
+.snakes-page .game-layout { gap:16px; }
+.snakes-page .board-column, .snakes-page .side-panel { background:#fffdf6; border:2.5px solid #637f83; border-radius:20px 25px 19px 23px; box-shadow:6px 7px 0 #c8d8c6, 0 18px 32px #607b7221; }
+.snakes-page .board-column { padding:15px 17px 13px; position:relative; }
+.snakes-page .board-column::before { content:""; position:absolute; top:10px; right:10px; width:42px; height:15px; border-radius:3px; background:#f3c46d82; transform:rotate(26deg); pointer-events:none; }
+.snakes-page .board-halo { background:#9bbab1; opacity:.2; filter:blur(3px); }
+.snakes-page .board { border:5px solid #fffef5; outline:2.5px solid #64898d; border-radius:13px 18px 13px 16px; background:#fff9e9; box-shadow:3px 5px 0 #9bb9b0a3, 0 14px 28px #365e6726; }
+.snakes-page .square { border:1px solid #fbf8edeb; background-image:radial-gradient(#b5aba218 1px,transparent 1px); background-size:12px 12px; }
+.snakes-page .tile-0 { background-color:#d9eff0; }
+.snakes-page .tile-1 { background-color:#fff1d6; }
+.snakes-page .tile-2 { background-color:#fae4e8; }
+.snakes-page .tile-3 { background-color:#e1f1dd; }
+.snakes-page .square-ladder { background-color:#cbe9d1; }
+.snakes-page .square-snake { background-color:#fce0e3; }
+.snakes-page .square-finish { background-color:#ffebac; }
+.snakes-page .square-number { color:#4c6b74; text-shadow:1px 1px #fffaf2; font-weight:950; }
+.snakes-page .finish-emoji { filter:drop-shadow(1px 2px 1px #80794b38); }
+.snakes-page .ladder-art { filter:drop-shadow(1px 2px 0 #6d695b58); }
+.snakes-page .snake-art { filter:drop-shadow(1px 2px 0 #5b5c5844); }
+.snakes-page .player-token { border:3px solid #fffdf2; box-shadow:0 4px 0 #647f7b,0 7px 9px #3e55543d; }
+.snakes-page .token-0 { background:linear-gradient(#35bae2,#137ea9); }
+.snakes-page .token-1 { background:linear-gradient(#f37fa5,#d74678); }
+.snakes-page .board-foot { margin-top:7px; padding:9px 8px 3px; border-top:2px dashed #9dbbb089; color:#557b7a; font-weight:900; }
+.snakes-page .legend-mid { color:#8b7662; }
+.snakes-page .side-panel { position:relative; padding:22px 24px 20px; overflow:hidden; }
+.snakes-page .side-panel::before { content:""; position:absolute; top:9px; right:14px; width:42px; height:14px; transform:rotate(19deg); background:#efc36f80; border:1px solid #dbb45c52; border-radius:2px 5px 2px 4px; pointer-events:none; }
+.snakes-page .side-panel h2 { color:#2f535c; font-weight:950; }
+.snakes-page .panel-intro, .snakes-page .small-note { color:#687f82; }
+.snakes-page .section-divider { height:0; background:none; border-top:2px dashed #c7d5c5; }
+.snakes-page .field-title { color:#426a70; }
+.snakes-page .team-field { border-radius:13px 16px 12px 17px; box-shadow:2px 3px 0 #b5d8d74f; }
+.snakes-page .team-blue { background:#eaf6f7; border-color:#81b9c4; }
+.snakes-page .team-pink { background:#fff0f1; border-color:#e9a6b9; }
+.snakes-page .team-field input { color:#2d6377; }
+.snakes-page .team-pink input { color:#ae4567; }
+.snakes-page .op-option, .snakes-page .difficulty-row button { border:2px solid #c6d6d0; border-radius:12px 16px 11px 15px; background:#fffef6; color:#668084; box-shadow:2px 3px 0 #d6dbcd; }
+.snakes-page .op-option strong { background:#f7f1df; color:#617e80; border-radius:10px 12px 9px 12px; }
+.snakes-page .op-option.selected, .snakes-page .difficulty-row button.chosen { border-color:#63ada7; color:#257f88; background:#e9f7eb; box-shadow:3px 4px 0 #b5d7c0; }
+.snakes-page .op-option.selected strong { background:#d5ede1; }
+.snakes-page .primary-btn { background:#188ba9; border:2px solid #2c7787; border-radius:13px 17px 12px 18px; box-shadow:3px 4px 0 #a8d0c9; }
+.snakes-page .primary-btn:hover { background:#0f7b97; filter:none; }
+.snakes-page .primary-btn:active { transform:translateY(2px); box-shadow:1px 2px 0 #a8d0c9; }
+.snakes-page .panel-heading { padding-bottom:11px; border-bottom:2px dashed #c8d9cf; }
+.snakes-page .mini-cup { border:2px solid #dabf80; background:#fff2c8; border-radius:11px 13px 10px 14px; color:#906822; }
+.snakes-page .score-list { grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; }
+.snakes-page .score-row { border:2px solid #b7cec9; border-radius:12px 15px 12px 16px; background:#fffef8; padding:9px 7px; box-shadow:2px 3px 0 #d4ded0; }
+.snakes-page .score-row.score-active.score-blue { background:#e9f6f6; border-color:#65b2bb; }
+.snakes-page .score-row.score-active.score-pink { background:#fff0f3; border-color:#e59eb8; }
+.snakes-page .score-marker { background:#208bad; border:2px solid #fff; box-shadow:2px 3px 0 #bad9dc; }
+.snakes-page .score-pink .score-marker { background:#df5582; box-shadow:2px 3px 0 #ecc5d1; }
+.snakes-page .score-label strong { color:#365f68; }
+.snakes-page .score-label small, .snakes-page .score-pos small { color:#718d8e; }
+.snakes-page .score-pos strong { color:#0d88ad; }
+.snakes-page .score-pink .score-pos strong { color:#d94a7e; }
+.snakes-page .turn-card { border:2.5px solid #82b5b5; border-radius:18px 21px 19px 20px; background:#f6fcf1; box-shadow:inset 0 0 0 4px #ffffff8a; }
+.snakes-page .turn-pink { background:#fff7f1; border-color:#e5afc1; }
+.snakes-page .turn-header span, .snakes-page .question-kicker { color:#708786; }
+.snakes-page .turn-header strong, .snakes-page .question-text { color:#177d9a; }
+.snakes-page .turn-pink .turn-header strong, .snakes-page .turn-pink .question-text { color:#c84d7c; }
+.snakes-page .turn-prompt { color:#697e81; }
+.snakes-page .dice-face { border:4px solid #fffdfa; background:#fff7de; border-radius:13px 17px 12px 18px; box-shadow:3px 4px 0 #b0c6bd; }
+.snakes-page .die-dot.visible { background:#1886aa; }
+.snakes-page .turn-pink .die-dot.visible { background:#d9517c; }
+.snakes-page .dice-reminder .dice-face { box-shadow:2px 3px 0 #b0c6bd; }
+.snakes-page .dice-reminder, .snakes-page .dice-reminder strong { color:#487f89; }
+.snakes-page .answer-row input { border:2.5px dashed #86b8b1; background:#fffefa; border-radius:12px 15px 11px 15px; color:#305c70; }
+.snakes-page .answer-row input:focus { border-style:solid; border-color:#2286ab; }
+.snakes-page .numberpad button { background:#e7f2eb; border:1.5px solid #a4c3c0; border-radius:11px 13px 10px 14px; color:#426e7f; box-shadow:2px 3px 0 #c1dcd6; }
+.snakes-page .numberpad .key-erase { background:#fde2d6; border-color:#e2b2a6; color:#b65a59; box-shadow:2px 3px 0 #ebc8c0; }
+.snakes-page .numberpad .key-submit, .snakes-page .turn-pink .numberpad .key-submit { background:#178ca9; border-color:#237a93; color:#fff; box-shadow:2px 3px 0 #95bcc5; }
+.snakes-page .turn-pink .numberpad .key-submit { background:#d8517d; border-color:#bc4a72; box-shadow:2px 3px 0 #deb2c4; }
+.snakes-page .win-heading { color:#356f77; }
+.snakes-page .footer-note { color:#62807e; border-top:2px dashed #abc1b37d; padding-top:11px; }
+@media  (max-width:1220px)  {.snakes-page .header-art { display:none; }}
+@media  (max-width:1040px)  {.snakes-page .game-layout { gap:11px; }
+.snakes-page .side-panel { padding:18px 15px; }
+.snakes-page .board-column { padding:11px; }}
+@media  (max-width:780px)  {.snakes-page .site-header { margin-bottom:12px; }
+.snakes-page .game-layout .board-column { order:2; }
+.snakes-page .game-layout .side-panel { order:1; }}
+@media  (max-width:460px)  {.snakes-page .app-shell { padding:10px 8px 22px; }
+.snakes-page .board-column { padding:8px; }
+.snakes-page .side-panel { padding:17px 12px; }
+.snakes-page .score-row { padding:7px 6px; }
+.snakes-page .score-list { gap:6px; }
+.snakes-page .side-panel::before { display:none; }
+.snakes-page .board-foot { font-size:.59rem; }
+.snakes-page .header-actions { margin-top:3px; }
+.snakes-page .brand-icon { min-width:57px; height:52px; }}
+@media  (prefers-reduced-motion: reduce)  {.snakes-page .header-art { animation:none; }}

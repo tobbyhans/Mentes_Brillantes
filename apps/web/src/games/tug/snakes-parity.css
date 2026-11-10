@@ -1,0 +1,208 @@
+/* TIRA TIRA · Mentes Brillantes · Paridad visual con Serpientes y Escaleras.
+   Se carga al final para anular los antiguos temas, sin tocar las reglas. */
+.tug-page {
+  --tira-ink:#282c2a; --tira-pink:#d95580; --tira-blue:#497d98;
+  --tira-yellow:#e3b64f; --tira-cream:#f9f7f0; --tira-paper:#fdfcf8;
+  --tira-line:#e5e1d7;
+  color:var(--tira-ink); font-family:'Trebuchet MS','Avenir Next',Avenir,system-ui,sans-serif;
+  background:#fbfaf7;
+}
+.tug-page .app-shell {
+  min-height:100vh; padding:clamp(12px,2.2vw,28px);
+  background-color:#fbfaf7;
+  background-image:linear-gradient(to right,#e6e5e0 1px,transparent 1px),linear-gradient(to bottom,#e6e5e0 1px,transparent 1px);
+  background-size:24px 24px;
+}
+.tug-page .app-container {max-width:1540px;margin:0 auto;}
+/* Cabecera editorial equivalente a la de Serpientes y Escaleras */
+.tug-page .tira-topline {display:flex;align-items:center;min-height:41px;}
+.tug-page .tira-topline .home-back-link {
+  display:inline-flex;align-items:center;margin:0 0 11px;
+  padding:9px 16px;border:1.5px solid #343835;border-radius:99px;
+  background:#fffdfa;color:var(--tira-ink);text-decoration:none;font-size:12px;font-weight:850;
+}
+.tug-page .tira-topline .home-back-link:hover {background:#f5efe5;}
+.tug-page .tira-site-header {
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  background:var(--tira-cream);border-bottom:1px solid #dcd8cd;
+  border-radius:10px 10px 0 0;padding:14px clamp(14px,2.4vw,28px);
+  min-height:92px;margin:0 0 16px;
+}
+.tug-page .tira-header-brand {display:flex;align-items:center;gap:13px;min-width:0;}
+.tug-page .tira-header-mark {
+  width:66px;height:66px;display:grid;place-items:center;flex:0 0 66px;
+  border:1.5px solid #333835;border-radius:12px;background:#fffdfa;
+}
+.tug-page .tira-header-mark svg {width:57px;height:54px;display:block;overflow:visible;}
+.tug-page .tira-header-copy {min-width:0;display:flex;flex-direction:column;gap:2px;}
+.tug-page .tira-header-eyebrow,.tug-page .tira-header-tagline {
+  color:var(--tira-blue);font-weight:900;letter-spacing:.17em;font-size:.64rem;
+}
+.tug-page .tira-header-copy h1 {
+  font-size:clamp(1.45rem,2.25vw,2.18rem);font-weight:1000;
+  letter-spacing:-.065em;line-height:1.06;color:var(--tira-ink);margin:2px 0;
+}
+.tug-page .tira-header-copy h1 span {color:var(--tira-pink);}
+.tug-page .tira-header-actions {display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:8px;}
+.tug-page .tira-header-actions .tug-audio-buttons {display:flex;align-items:center;gap:8px;}
+.tug-page .tira-header-actions .tug-audio-buttons .sound-btn,
+.tug-page .tira-header-actions .header-button {
+  min-height:43px;border:1.5px solid #d5d0c5;border-radius:99px;
+  background:var(--tira-paper);color:var(--tira-ink);padding:9px 15px;
+  box-shadow:none;font-size:.87rem;font-weight:850;
+}
+.tug-page .tira-header-actions .tug-audio-buttons .sound-btn.enabled {color:var(--tira-blue);background:#f3f7f6;border-color:#9eb4b9;}
+.tug-page .tira-header-actions .header-button:hover {background:#f5efe5;}
+/* Dos columnas en preparación, como el tablero + panel de Serpientes. */
+.tug-page .tira-setup-layout {
+  display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);
+  gap:18px;align-items:start;
+}
+.tug-page .tira-preview,.tug-page .setup-card {
+  min-width:0;background:var(--tira-paper);border:1.5px solid #d9d5cb;
+  border-radius:12px;box-shadow:none;overflow:hidden;
+}
+.tug-page .tira-preview {padding:24px 20px 17px;display:flex;flex-direction:column;gap:8px;min-height:545px;}
+.tug-page .tira-preview-kicker {color:var(--tira-blue);font-size:.72rem;font-weight:900;letter-spacing:.16em;}
+.tug-page .tira-preview h2 {margin:4px 0 0;color:var(--tira-ink);font-size:clamp(1.4rem,2.1vw,1.95rem);letter-spacing:-.055em;}
+.tug-page .tira-preview p {margin:0;max-width:440px;color:#767b75;line-height:1.5;font-size:.9rem;}
+.tug-page .tira-preview-scene {
+  display:flex;align-items:center;justify-content:center;flex:1;min-height:310px;
+  margin:9px 0 0;border:1px solid #e9e4d8;border-radius:10px;
+  background:linear-gradient(#fffefa,#f9f6ee);
+}
+.tug-page .tira-preview-scene .tug-svg {display:block;width:100%;height:auto;min-height:210px;max-height:365px;}
+.tug-page .tira-preview-legend {display:flex;align-items:center;justify-content:space-between;gap:6px;flex-wrap:wrap;color:#798078;font-size:.71rem;font-weight:800;}
+.tug-page .tira-preview-legend span {display:inline-flex;align-items:center;gap:6px;}
+.tug-page .preview-dot {display:inline-block;width:10px;height:10px;border-radius:50%;}
+.tug-page .preview-blue {background:#497d98;} .tug-page .preview-pink {background:var(--tira-pink);}
+.tug-page .setup-wrap {margin:0;max-width:none;width:100%;}
+.tug-page .setup-card {border-radius:12px;box-shadow:none;}
+.tug-page .stepper {background:#f5f2ea;border-bottom:1px solid #e2ddd3;gap:3px;padding:12px 9px;}
+.tug-page .step {flex-direction:column;gap:5px;min-width:0;font-size:.74rem;line-height:1.2;border-radius:9px;padding:7px 3px;color:#6e7772;}
+.tug-page .step-no {width:27px;height:27px;flex:0 0 27px;background:#e8e5de;color:#6b7572;}
+.tug-page .step.current {background:#e6eff1;box-shadow:none;color:var(--tira-blue);}
+.tug-page .current .step-no,.tug-page .completed .step-no {background:var(--tira-blue);border:0;color:#fff;}
+.tug-page .setup-content {
+  padding:26px clamp(15px,2vw,27px) 19px;min-height:385px;
+  background:var(--tira-paper);background-image:none;
+}
+.tug-page .setup-content h3 {color:var(--tira-ink);font-size:1.33rem;}
+.tug-page .section-hint {font-size:.88rem;color:#777b78;margin-bottom:22px;}
+.tug-page .setup-section-icon {transform:none;width:48px;height:48px;margin-bottom:11px;border-radius:10px;border:1px solid #d9d4c9;background:#f7f2e5;color:var(--tira-pink);box-shadow:none;}
+.tug-page .choice,.tug-page .digit-choice,.tug-page .operation-choice {
+  background:#fffefa;border:1.5px solid #ded9cf;border-radius:10px;box-shadow:none;
+  color:var(--tira-ink);min-width:0;
+}
+.tug-page .choice:hover,.tug-page .digit-choice:hover,.tug-page .operation-choice:hover {transform:none;border-color:#8daeb5;}
+.tug-page .choice.active,.tug-page .digit-choice.active,.tug-page .operation-choice.active {
+  background:#eaf0ef;border-color:var(--tira-blue);box-shadow:inset 0 0 0 1px var(--tira-blue);
+}
+.tug-page .choice strong,.tug-page .digit-numbers,.tug-page .operation-description strong {color:var(--tira-ink);}
+.tug-page .choice-grid {gap:7px;}
+.tug-page .duration-grid {grid-template-columns:repeat(5,minmax(0,1fr));}
+.tug-page .choice {min-height:94px;padding:12px 4px;}
+.tug-page .choice strong {font-size:1.56rem;}
+.tug-page .choice span {font-size:.7rem;}
+.tug-page .operation-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+.tug-page .operation-choice {min-height:65px;padding:8px;gap:8px;}
+.tug-page .operation-symbol {width:35px;height:35px;flex:0 0 35px;border-radius:8px;background:#f2ebe0;color:var(--tira-pink);}
+.tug-page .digit-grid {grid-template-columns:repeat(3,minmax(0,1fr));}
+.tug-page .digit-choice {min-height:106px;padding:8px 4px;}
+.tug-page .team-input {border:1.5px solid #ded9ce;border-radius:10px;background:#fffefa;}
+.tug-page .team-input.blue-input {border-left:4px solid var(--tira-blue);}
+.tug-page .team-input.red-input {border-left:4px solid var(--tira-pink);}
+.tug-page .setup-footer {background:#f8f5ee;border-top:1px solid #e3ded3;padding:15px 20px;}
+.tug-page .btn {border-radius:10px;box-shadow:none;}
+.tug-page .btn-primary {background:var(--tira-blue);color:#fff;border:1.5px solid var(--tira-blue);box-shadow:none;}
+.tug-page .btn-ghost {background:#f6f3eb;color:var(--tira-ink);border:1.5px solid #d9d3c8;box-shadow:none;}
+.tug-page .setup-bottom-note {color:#888b84;margin-top:12px;}
+/* Tarjetas de partida a juego con las de Serpientes. */
+.tug-page .game-grid {grid-template-columns:minmax(210px,.78fr) minmax(340px,1.5fr) minmax(210px,.78fr);gap:clamp(9px,1.2vw,16px);}
+.tug-page .team-panel,.tug-page .arena {
+  border:1.5px solid #d9d5cb;background:var(--tira-paper);
+  border-radius:12px;box-shadow:none;overflow:hidden;
+}
+.tug-page .team-panel.red {box-shadow:none;}
+.tug-page .team-panel:after {display:none;}
+.tug-page .team-panel-head,.tug-page .team-panel.red .team-panel-head {
+  border:0;border-bottom:1px solid #e3ddd1;background:#f6f3eb;
+  padding:15px 14px;color:var(--tira-ink);
+}
+.tug-page .team-panel.blue .team-panel-head {border-top:4px solid var(--tira-blue);border-left:0;}
+.tug-page .team-panel.red .team-panel-head {border-top:4px solid var(--tira-pink);border-left:0;}
+.tug-page .team-score-pill {background:var(--tira-blue);color:#fff;border-radius:50%;border:0;width:35px;height:35px;}
+.tug-page .team-panel.red .team-score-pill {background:var(--tira-pink);color:#fff;}
+.tug-page .team-body {padding:16px 13px 13px;}
+.tug-page .question-label {color:var(--tira-blue);font-size:.66rem;}
+.tug-page .question {font-size:clamp(1.7rem,2.7vw,2.7rem);color:var(--tira-blue);min-height:75px;}
+.tug-page .red .question {color:var(--tira-pink);}
+.tug-page .answer-box,.tug-page .red .answer-box {height:51px;background:#fffefa;border:1.5px solid #d5d0c5;color:var(--tira-ink);border-radius:10px;}
+.tug-page .panel-divider {border:0;height:1px;background:#e7e1d6;margin:15px 0;}
+.tug-page .keypad {gap:7px;}
+.tug-page .keypad button,.tug-page .red .keypad button,.tug-page .compare-key,.tug-page .red .compare-key {
+  height:clamp(42px,5.8vh,56px);border:1.5px solid #e3ded4;background:#f6f3eb;
+  color:var(--tira-ink);box-shadow:inset 0 -2px #e6e0d4;border-radius:10px;
+}
+.tug-page .keypad .key-delete,.tug-page .red .keypad .key-delete {background:#f8e7e1;color:#ac513b;box-shadow:inset 0 -2px #e8cabf;}
+.tug-page .keypad .key-enter {background:var(--tira-blue);border-color:var(--tira-blue);box-shadow:none;color:white;}
+.tug-page .red .keypad .key-enter {background:var(--tira-pink);border-color:var(--tira-pink);box-shadow:none;color:white;}
+.tug-page .keyboard-select.keyboard-active {border-color:var(--tira-blue);background:#eaf0ef;color:var(--tira-ink);}
+.tug-page .team-feedback {color:#737c75;}
+.tug-page .arena {border-top:4px solid var(--tira-yellow);background:var(--tira-paper);min-height:550px;}
+.tug-page .arena-scoreboard {border-bottom:1px solid #e3ddd3;background:#f9f7f0;padding:13px 16px;}
+.tug-page .arena-score strong,.tug-page .arena-clock time {color:var(--tira-ink);}
+.tug-page .arena-score.red-score strong {color:var(--tira-pink);}
+.tug-page .scene-area {background:#fffefa;}
+.tug-page .scene-caption {color:var(--tira-ink);font-size:.83rem;margin-top:10px;}
+.tug-page .arena-bottom {background:#f9f7f0;border-top:1px solid #e3ddd3;}
+.tug-page .rope-meter {background:linear-gradient(90deg,#8bb6c8,#f7f2e6 50%,#f6cad9 52%, #d95580);border:2px solid white;box-shadow:none;}
+.tug-page .meter-flag {background:var(--tira-ink);}
+.tug-page .result-card {border:1.5px solid #d9d5cb;border-radius:12px;box-shadow:0 12px 28px #0002;}
+.tug-page .result-card h2 {color:var(--tira-ink);}
+.tug-page .game-bottom-note {color:#747974;}
+@media(max-width:1200px) {
+  .tug-page .game-grid {grid-template-columns:minmax(194px,.85fr) minmax(310px,1.3fr) minmax(194px,.85fr);}
+}
+@media(max-width:950px) {
+  .tug-page .tira-setup-layout {grid-template-columns:1fr;}
+  .tug-page .tira-preview {min-height:0;padding:16px;}
+  .tug-page .tira-preview-scene {min-height:0;}
+  .tug-page .tira-preview-scene .tug-svg {max-height:260px;min-height:160px;}
+  .tug-page .game-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+  .tug-page .game-grid .arena {grid-column:1/-1;grid-row:1;min-height:0;}
+  .tug-page .game-grid .team-panel {grid-row:2;}
+}
+@media(max-width:690px) {
+  .tug-page .tira-site-header {flex-wrap:wrap;padding:12px;gap:11px;}
+  .tug-page .tira-header-mark {width:50px;height:50px;flex-basis:50px;}
+  .tug-page .tira-header-mark svg {width:46px;height:43px;}
+  .tug-page .tira-header-copy h1 {font-size:1.5rem;}
+  .tug-page .tira-header-eyebrow,.tug-page .tira-header-tagline {font-size:.56rem;}
+  .tug-page .tira-header-actions {width:100%;justify-content:flex-start;}
+  .tug-page .tira-preview {gap:6px;}
+  .tug-page .tira-preview-scene .tug-svg {max-height:210px;}
+  .tug-page .setup-content {min-height:350px;}
+}
+@media(max-width:450px) {
+  .tug-page .tira-header-actions .tug-audio-buttons .sound-btn,.tug-page .tira-header-actions .header-button {min-height:38px;padding:7px 10px;font-size:.76rem;}
+  .tug-page .tira-preview h2 {font-size:1.33rem;}
+  .tug-page .tira-preview p {font-size:.81rem;}
+  .tug-page .tira-preview-legend {font-size:.63rem;}
+  .tug-page .setup-content {padding:19px 12px;}
+  .tug-page .duration-grid {grid-template-columns:repeat(3,minmax(0,1fr));}
+  .tug-page .operation-grid {grid-template-columns:1fr;}
+  .tug-page .team-inputs {flex-direction:column;}
+  .tug-page .team-input {width:100%;}
+  .tug-page .vs-chip {align-self:center;}
+  .tug-page .game-grid {gap:9px;}
+  .tug-page .team-body {padding:11px 7px;}
+  .tug-page .keypad {gap:5px;}
+  .tug-page .keypad button {height:43px;}
+  .tug-page .question {white-space:normal;overflow-wrap:anywhere;font-size:clamp(1.1rem,4.2vw,1.7rem);}
+  .tug-page .team-heading h2 {font-size:.8rem;}
+  .tug-page .team-panel-head,.tug-page .team-panel.red .team-panel-head {padding:9px 7px;}
+}
+@media(prefers-reduced-motion:reduce) {
+  .tug-page .tira-site-header button,.tug-page .tira-preview {transition:none!important;}
+}

@@ -1,0 +1,158 @@
+.home-root {--ink:#282c2a;--orange:#db6447;--blue:#497d98;--yellow:#e3b64f;--cream:#f9f7f0;--paper:#fdfcf8;--line:#e5e1d7;--muted:#6f7471;--grid:#e6e5e0}
+.home-root * {box-sizing:border-box}
+.home-root {scroll-behavior:smooth}
+.home-root {margin:0;min-width:320px;color:var(--ink);font-family:"Trebuchet MS","Avenir Next",Avenir,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background-color:#fbfaf7;background-image:linear-gradient(to right,var(--grid) 1px,transparent 1px),linear-gradient(to bottom,var(--grid) 1px,transparent 1px);background-size:24px 24px;-webkit-font-smoothing:antialiased}
+.home-root:before {content:"";position:absolute;top:0;left:20%;height:100%;border-left:1px dashed rgba(63,67,66,.1);pointer-events:none}
+.home-root button, .home-root a {font:inherit;-webkit-tap-highlight-color:transparent}
+.home-root button {cursor:pointer}
+.home-root a {text-decoration:none;color:inherit}
+.home-root :is(button,a):focus-visible {outline:3px solid var(--blue);outline-offset:3px}
+.home-root .shell {width:calc(100% - clamp(30px,6vw,112px));max-width:none;margin:0 auto 34px;position:relative;z-index:1}
+.home-root .top-panel {background:var(--cream);padding:0 clamp(20px,3vw,52px);position:relative;overflow:hidden;box-shadow:0 8px 30px rgba(50,44,37,.025)}
+.home-root .top-panel:after {content:"";position:absolute;right:-24px;bottom:-58px;width:160px;height:160px;border:1px solid #e8e5dc;border-radius:50%;pointer-events:none}
+.home-root .header {display:flex;justify-content:space-between;align-items:center;height:90px;gap:20px;border-bottom:1px solid #e7e4dc}
+.home-root .brand {display:inline-flex;align-items:center;gap:12px;white-space:nowrap;min-width:0;flex:none}
+.home-root .brand-lockup {display:flex;flex-direction:column;min-width:0;line-height:1}
+.home-root .brand-name {display:flex;flex-direction:column;align-items:flex-start;font-size:clamp(20px,1.72vw,28px);font-weight:1000;letter-spacing:-.068em;line-height:.87}
+.home-root .brand-first {color:var(--ink)}
+.home-root .brand-second {color:var(--orange);position:relative}
+.home-root .brand-spark {display:inline-block;position:relative;top:-.3em;margin-left:5px;font-size:.56em;color:var(--yellow);transform:rotate(-18deg)}
+.home-root .logo {height:65px;width:65px;flex:none;overflow:visible}
+.home-root .logo-mark {transform-origin:50% 50%;transition:transform .28s cubic-bezier(.2,.7,.2,1)}
+.home-root .brand:hover .logo-mark {transform:rotate(-8deg)}
+.home-root .nav {display:flex;align-items:center;gap:clamp(14px,2.8vw,44px);font-size:13px;font-weight:750}
+.home-root .nav a:first-child {color:#636762}
+.home-root .nav-cta {border:1.5px solid var(--ink);padding:11px 19px;border-radius:999px;white-space:nowrap;transition:background .2s,color .2s}
+.home-root .nav-cta:hover {background:var(--ink);color:white}
+.home-root .hero {min-height:0;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(280px,.88fr);gap:22px;align-items:center;padding:6px 0 0}
+.home-root .hero-copy {position:relative;z-index:2}
+.home-root .eyebrow {margin:0 0 9px;text-transform:uppercase;letter-spacing:.24em;font-weight:900;font-size:12px;color:var(--orange)}
+.home-root h1 {font-size:clamp(46px,5.2vw,87px);letter-spacing:-.075em;line-height:1.06;margin:0 0 12px;font-weight:900}
+.home-root .spark {display:inline-block;color:var(--orange);font-size:.85em;font-weight:400;vertical-align:middle;transform:rotate(-13deg);margin-left:.09em;animation:twinkle 5s ease-in-out infinite}
+.home-root .intro {color:#6d706d;font-size:clamp(14px,1.1vw,18px);line-height:1.5;max-width:540px;margin:0 0 7px}
+.home-root .micro-note {display:flex;align-items:center;gap:8px;margin:0;font-size:12px;color:#8a8b83;font-weight:700;letter-spacing:.02em}
+.home-root .micro-note span {width:17px;height:2px;background:var(--orange)}
+.home-root .hero-stage {height:190px;display:flex;align-items:center;justify-content:center;position:relative}
+.home-root .hero-stage:before {content:"";position:absolute;inset:15px 35px 15px 35px;background:radial-gradient(ellipse at center,#fdfcf5 0,#f9f7f0 65%);border-radius:48%;opacity:.75}
+.home-root .hero-stage svg {position:relative;height:100%;width:100%;max-width:530px;overflow:visible;animation:art-enter .9s cubic-bezier(.17,.67,.37,1) both}
+.home-root .hero-pencil {position:absolute;right:6px;bottom:19px;color:#9a978d;font-size:11px;letter-spacing:.14em;font-weight:750;transform:rotate(-6deg)}
+.home-root .tiny-cross {position:absolute;font-size:17px;color:var(--blue);z-index:3}
+.home-root .tiny-cross.one {left:1%;top:10%}
+.home-root .tiny-cross.two {right:5%;top:2%}
+.home-root .filters-bar {background:var(--cream);padding:13px clamp(18px,2vw,28px);display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:0;width:fit-content;max-width:100%;border:1px solid #eae6dc;border-bottom:0;border-radius:9px 9px 0 0}
+.home-root .filter {border:1px solid transparent;border-radius:999px;background:transparent;color:#747670;padding:9px 14px;font-size:12px;font-weight:800;transition:background .18s,border .18s,color .18s}
+.home-root .filter[aria-pressed="true"] {background:var(--ink);color:white}
+.home-root .filter:not([aria-pressed="true"]):hover {color:var(--ink);border-color:#cbc8be;background:#fffdf9}
+.home-root .board {border:1.5px solid #303330;border-radius:clamp(25px,3vw,52px);padding:clamp(18px,2vw,34px);background:#f8f7f1;box-shadow:0 7px 20px rgba(0,0,0,.02);scroll-margin-top:24px}
+.home-root .board-head {display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 3px 18px}
+.home-root .board-head strong {font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:900}
+.home-root .board-head strong:before {content:"✳";color:var(--orange);margin-right:9px;font-size:16px}
+.home-root #counter {font-size:12px;color:#8c8b82;font-weight:800}
+.home-root .cards {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.25vw,22px)}
+.home-root .card {appearance:none;position:relative;display:flex;min-width:0;width:100%;flex-direction:column;text-align:left;border:1px solid #e9e5dc;background:#fffdfa;border-radius:9px;padding:clamp(16px,1.5vw,26px);min-height:clamp(255px,23vw,340px);color:var(--ink);overflow:hidden;transition:transform .24s,border .24s,box-shadow .24s}
+.home-root .card:before {content:"";position:absolute;inset:0 0 auto;height:4px;background:var(--accent,var(--orange));transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.home-root .card:hover, .home-root .card:focus-visible {transform:translateY(-5px);border-color:#d3cdc1;box-shadow:0 13px 26px rgba(47,43,39,.07)}
+.home-root .card:hover:before, .home-root .card:focus-visible:before {transform:scaleX(1)}
+.home-root .card-top {display:flex;justify-content:space-between;align-items:center;gap:8px;color:#a09c91;font-size:10px;font-weight:900;letter-spacing:.12em}
+.home-root .card-top .asterisk {font-size:17px;color:var(--accent,var(--orange));line-height:1}
+.home-root .illustration {flex:1;min-height:155px;display:grid;place-items:center;position:relative;padding:7px 0 3px}
+.home-root .illustration:after {content:"";position:absolute;width:65%;height:1px;background:repeating-linear-gradient(to right,#ebe5d8 0 3px,transparent 3px 8px);bottom:12px;left:17.5%}
+.home-root .illustration svg {display:block;width:100%;max-width:230px;height:160px;overflow:visible;transition:transform .3s cubic-bezier(.2,.6,.2,1)}
+.home-root .card:hover .illustration svg {transform:translateY(-7px) rotate(-3deg) scale(1.04)}
+.home-root .illustration img {display:block;width:100%;max-width:230px;height:160px;object-fit:contain;transition:transform .25s}
+.home-root .card:hover .illustration img {transform:translateY(-6px) rotate(-3deg)}
+.home-root .card-bottom {display:flex;align-items:end;justify-content:space-between;gap:6px;margin-top:8px}
+.home-root .category {display:block;color:#898c87;font-size:11px;line-height:1.3;font-weight:750;margin-bottom:5px}
+.home-root .game-hint {display:block;margin-top:5px;font-size:11px;line-height:1.35;color:#858980;max-width:210px;font-weight:650}
+.home-root .game-title {font-size:clamp(16px,1.25vw,21px);line-height:1.18;font-weight:900;letter-spacing:-.055em;display:block}
+.home-root .go {width:34px;height:34px;flex:none;border:1px solid #e8e2d9;display:grid;place-items:center;border-radius:100%;font-size:19px;transition:background .18s,border .18s,color .18s,transform .18s}
+.home-root .card:hover .go {background:var(--accent,var(--orange));color:white;border-color:var(--accent,var(--orange));transform:rotate(45deg)}
+.home-root .board-foot {display:flex;align-items:center;justify-content:space-between;gap:15px;margin:22px 3px 2px;padding-top:16px;border-top:1px solid #e6e2d9;color:#8e8b80;font-size:11px}
+.home-root .legend {display:flex;align-items:center;gap:9px}
+.home-root .dot-set {display:flex;gap:4px}
+.home-root .dot-set i {width:7px;height:7px;background:var(--orange);border-radius:50%;display:block}
+.home-root .dot-set i:nth-child(2) {background:var(--blue)}
+.home-root .dot-set i:nth-child(3) {background:var(--yellow)}
+.home-root .empty {grid-column:1/-1;padding:55px 20px;text-align:center;border:1px dashed #d9d4cb;color:var(--muted);border-radius:8px;background:white}
+.home-root .footer {display:flex;align-items:center;justify-content:space-between;gap:14px;color:#777b75;padding:20px 2px 0;font-size:12px}
+.home-root .footer b {color:var(--ink)}
+.home-root dialog {width:min(450px,calc(100% - 36px));border:1px solid #d7d1c6;border-radius:18px;padding:32px;background:var(--paper);color:var(--ink);box-shadow:0 20px 80px #0003}
+.home-root dialog::backdrop {background:#252c2e88;backdrop-filter:blur(3px)}
+.home-root dialog h2 {font-size:29px;letter-spacing:-.055em;margin:14px 0 8px;line-height:1.15}
+.home-root dialog p {font-size:14px;line-height:1.6;color:#6b706c}
+.home-root dialog code {background:#efece4;border-radius:3px;padding:2px 5px;color:var(--ink)}
+.home-root .close {background:var(--ink);color:white;border:0;border-radius:99px;padding:12px 21px;font-size:13px;font-weight:800;margin-top:7px}
+@keyframes  twinkle {50%{transform:rotate(20deg) scale(.9)}}
+@keyframes  art-enter {from{opacity:0;transform:translateY(14px) rotate(2deg)}to{opacity:1;transform:translateY(0) rotate(0)}}
+@media (min-width:1800px) {.home-root .hero {min-height:0}
+.home-root .hero-stage {height:210px}
+.home-root .card {min-height:370px}
+.home-root .illustration svg, .home-root .illustration img {height:205px;max-width:270px}
+.home-root .illustration {min-height:215px}}
+@media (max-width:1100px) {.home-root .cards {grid-template-columns:repeat(3,minmax(0,1fr))}
+.home-root .hero {grid-template-columns:1fr 1fr}
+.home-root .hero-stage {height:190px}
+.home-root .card {min-height:280px}}
+@media (max-width:780px) {.home-root .shell {width:calc(100% - 28px);margin:0 auto 26px}
+.home-root .top-panel {padding:0 19px}
+.home-root .header {height:72px}
+.home-root .nav {gap:12px}
+.home-root .hero {padding:13px 0 0;grid-template-columns:1fr;gap:2px}
+.home-root .hero h1 {font-size:clamp(46px,10vw,65px)}
+.home-root .hero-stage {height:128px;max-width:470px;width:100%;justify-self:center}
+.home-root .hero-pencil {right:17px}
+.home-root .cards {grid-template-columns:repeat(2,minmax(0,1fr))}
+.home-root .card {min-height:254px}
+.home-root .illustration {min-height:125px}
+.home-root .illustration svg, .home-root .illustration img {height:125px}
+.home-root .filters-bar {width:100%;border-radius:9px 9px 0 0}
+.home-root .board {padding:15px;border-radius:27px}
+.home-root .board-foot, .home-root .footer {flex-wrap:wrap;row-gap:8px}}
+@media (min-width:501px) and (max-width:780px) {.home-root .logo {width:50px;height:50px}
+.home-root .brand-name {font-size:22px}
+.home-root .brand {gap:8px}}
+@media (max-width:500px) {.home-root .nav>a:first-child {display:none}
+.home-root .nav-cta {font-size:12px;padding:9px 13px}
+.home-root .brand {gap:6px}
+.home-root .brand-name {font-size:clamp(16px,4.4vw,19px)}
+.home-root .brand-spark {margin-left:2px}
+.home-root .logo {width:42px;height:42px}
+.home-root .header {gap:9px}
+.home-root .eyebrow {font-size:10px}
+.home-root .hero {padding-top:12px}
+.home-root .hero h1 {font-size:clamp(39px,10vw,52px)}
+.home-root .intro {font-size:13px}
+.home-root .hero-stage {height:102px}
+.home-root .filters-bar {padding:11px 9px;gap:3px}
+.home-root .filter {font-size:11px;padding:9px 10px}
+.home-root .board {padding:10px;border-radius:21px}
+.home-root .board-head {margin:7px 5px 11px}
+.home-root .board-head strong {font-size:10px}
+.home-root .cards {gap:9px}
+.home-root .card {padding:11px;min-height:215px}
+.home-root .card-top {font-size:8px}
+.home-root .illustration {min-height:120px}
+.home-root .illustration svg, .home-root .illustration img {height:118px}
+.home-root .game-title {font-size:14px}
+.home-root .category {font-size:10px}
+.home-root .go {width:27px;height:27px;font-size:16px}
+.home-root .board-foot {font-size:10px}}
+@media (max-width:500px) {.home-root .game-hint {font-size:9px;line-height:1.25}}
+@media (max-width:365px) {.home-root .cards {grid-template-columns:1fr}
+.home-root .card {min-height:230px}
+.home-root .illustration svg, .home-root .illustration img {height:148px}
+.home-root .illustration {min-height:155px}}
+@media (prefers-reduced-motion:reduce) {.home-root {scroll-behavior:auto}
+.home-root *, .home-root *:before, .home-root *:after {transition:none!important;animation:none!important}}
+.home-root {color:#282c2a;min-height:100vh;font-family:'Trebuchet MS','Avenir Next',Avenir,system-ui,sans-serif;background-color:#fbfaf7;background-image:linear-gradient(to right,#e6e5e0 1px,transparent 1px),linear-gradient(to bottom,#e6e5e0 1px,transparent 1px);background-size:24px 24px;padding-top:1px;}
+.home-root .hero-stage .home-hero-art{position:relative;width:min(100%,228px);height:auto;max-height:174px;object-fit:contain;mix-blend-mode:multiply;animation:art-enter .9s cubic-bezier(.17,.67,.37,1) both;filter:drop-shadow(0 7px 11px rgba(219,100,71,.06));}
+.home-root .soon-backdrop{position:fixed;inset:0;z-index:100;background:#252c2e88;display:grid;place-items:center;padding:20px;}
+.home-root .soon-dialog{width:min(450px,100%);border:1px solid #d7d1c6;border-radius:18px;padding:32px;background:#fdfcf8;box-shadow:0 20px 80px #0003;}
+.home-root .soon-dialog h2{font-size:29px;letter-spacing:-.055em;margin:14px 0 8px;}
+.home-root .soon-dialog p{color:#6b706c;font-size:14px;}
+.home-root .home-hero-art{overflow:visible;}
+
+/* Mascotas aportadas para el home: proporción original, sin estirar y con fondo fusionado con el papel. */
+@media (min-width:1800px){.home-root .hero-stage .home-hero-art{width:min(100%,248px);max-height:190px}}
+@media (max-width:780px){.home-root .hero-stage .home-hero-art{width:min(100%,165px);max-height:120px}}
+@media (max-width:500px){.home-root .hero-stage .home-hero-art{width:min(100%,138px);max-height:98px}}

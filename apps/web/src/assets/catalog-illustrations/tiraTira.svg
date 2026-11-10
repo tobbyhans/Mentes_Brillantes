@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 135" role="img" aria-label="Dos personajes geométricos tirando de una cuerda">
+        <!-- Cuerda central: línea trenzada, pañuelo del medio y pequeñas marcas -->
+        <path d="M51 72 Q68 70 90 72 T129 72" fill="none" stroke="#cfaa64" stroke-width="6" stroke-linecap="round"/>
+        <path d="m58 67 4 10m8-10 4 10m8-10 4 10m21-10 4 10m8-10 4 10" stroke="#fdfcf8" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M88 71 95 71 92 88 85 80Z" fill="#e3b64f"/>
+        <!-- Equipo naranja: cabeza redonda, cuerpo triangular, brazos en tensión -->
+        <circle cx="36" cy="43" r="13" fill="#db6447"/>
+        <path d="m32 56-11 42 35 1-7-34Z" fill="#db6447"/>
+        <path d="M45 64 56 71 67 70" fill="none" stroke="#282e2b" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="67" cy="70" r="4.2" fill="#db6447"/>
+        <path d="M30 97 16 116M48 98 65 116" fill="none" stroke="#282e2b" stroke-width="4" stroke-linecap="round"/>
+        <path d="M11 117h12M59 117h13" stroke="#497d98" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="39" cy="42" r="1.6" fill="#282e2b"/>
+        <!-- Equipo azul tirando en sentido contrario -->
+        <circle cx="144" cy="43" r="13" fill="#497d98"/>
+        <path d="m135 62-10 37h36l-11-43Z" fill="#497d98"/>
+        <path d="M135 64 125 71 114 70" fill="none" stroke="#282e2b" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="114" cy="70" r="4.2" fill="#497d98"/>
+        <path d="M134 98 116 116M153 97 165 116" fill="none" stroke="#282e2b" stroke-width="4" stroke-linecap="round"/>
+        <path d="M109 117h14M158 117h13" stroke="#db6447" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="141" cy="42" r="1.6" fill="#282e2b"/>
+        <!-- Detalles de movimiento con estética de cuaderno -->
+        <path d="m12 58-7 3m7 5-8 1m164-9 7 3m-7 5 8 1" stroke="#e3b64f" stroke-width="2" stroke-linecap="round"/>
+        <path d="m88 17 4 7 7 3-7 3-4 7-4-7-7-3 7-3Z" fill="#e3b64f"/>
+        <circle cx="110" cy="23" r="3" fill="#db6447"/>
+        <path d="M25 20h13m-6-6v13" stroke="#497d98" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>

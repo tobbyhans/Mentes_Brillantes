@@ -1,0 +1,67 @@
+/* Mentes Brillantes · Variante React del tema editorial (v3) */
+.tug-page {--mb-ink:#282c2a;--mb-orange:#db6447;--mb-blue:#497d98;--mb-yellow:#e3b64f;--mb-cream:#f9f7f0;--mb-paper:#fdfcf8;--mb-line:#e5e1d7;--mb-muted:#6f7471;color:var(--mb-ink);background:#fbfaf7;font-family:"Trebuchet MS",Avenir,system-ui,sans-serif}
+.tug-page .app-shell {background-color:#fbfaf7;background-image:linear-gradient(to right,#e6e5e0 1px,transparent 1px),linear-gradient(to bottom,#e6e5e0 1px,transparent 1px);background-size:24px 24px;padding:clamp(12px,2vw,26px)}
+.tug-page .app-container {max-width:1540px}
+.tug-page .home-back-link {display:inline-flex;align-items:center;border:1.5px solid #343835;border-radius:999px;background:#fffdfa;color:var(--mb-ink);font-weight:850;font-size:12px;padding:9px 16px;margin:0 0 13px;text-decoration:none;box-shadow:none;transition:background .2s,transform .2s}
+.tug-page .home-back-link:hover {background:#f5efe5;transform:translateX(-2px)}
+
+
+
+.tug-page .header-button {background:var(--mb-paper);color:var(--mb-ink);border:1.5px solid #d4cec4;border-radius:999px;box-shadow:none}
+.tug-page .header-button:hover {background:#f1eee7}
+.tug-page .setup-content h3 {color:var(--mb-ink);letter-spacing:-.06em}
+.tug-page .section-hint, .tug-page .step-caption {color:#747974}
+.tug-page .setup-card {border:1.5px solid #d9d4c9;border-radius:15px;background:var(--mb-paper);box-shadow:5px 6px 0 #e7e2d8}
+.tug-page .stepper {background:#f5f2ea;border-bottom:1px solid #e2ddd3}
+.tug-page .step.current {background:#e7eff0;color:var(--mb-blue)}
+.tug-page .step-no, .tug-page .current .step-no, .tug-page .completed .step-no {background:var(--mb-blue);color:#fff}
+.tug-page .setup-section-icon {border:1px solid #dcd5c9;background:#f8f4e9;color:var(--mb-orange);border-radius:9px;box-shadow:none}
+.tug-page .choice, .tug-page .digit-choice, .tug-page .operation-choice {border:1.5px solid #ddd8cd;background:#fffdfa;border-radius:10px;box-shadow:none;color:var(--mb-ink)}
+.tug-page .choice.active, .tug-page .digit-choice.active, .tug-page .operation-choice.active {background:#edf2f0;border-color:var(--mb-blue);box-shadow:inset 0 0 0 1px var(--mb-blue)}
+.tug-page .choice strong, .tug-page .choice.active strong, .tug-page .digit-numbers, .tug-page .operation-description strong {color:var(--mb-ink)}
+.tug-page .operation-symbol {background:#f0e8d9;color:var(--mb-orange);border-radius:8px}
+.tug-page .team-input {border:1.5px solid #dcd5c9;background:#fffefa;border-radius:10px}
+.tug-page .team-input.blue-input {border-left:5px solid var(--mb-blue)}
+.tug-page .team-input.red-input {border-left:5px solid var(--mb-orange)}
+.tug-page .background-pick.selected {border-color:var(--mb-blue);background:#eaf0f0;color:var(--mb-ink)}
+.tug-page .setup-footer {border-top:1px solid #e3ded3;background:#f8f5ee}
+.tug-page .btn {border-radius:9px}
+.tug-page .btn-primary {background:var(--mb-ink);box-shadow:4px 5px 0 var(--mb-yellow);border:1.5px solid var(--mb-ink);color:#fff}
+.tug-page .btn-ghost {border:1px solid #d4cec4;background:#f2efe6;color:var(--mb-ink)}
+.tug-page .game-grid {gap:clamp(10px,1.4vw,18px)}
+.tug-page .team-panel, .tug-page .arena {background:var(--mb-paper);border:1.5px solid #dcd6cc;border-radius:14px;box-shadow:4px 5px 0 #e8e1d6}
+.tug-page .team-panel:after {display:none}
+.tug-page .team-panel-head, .tug-page .team-panel.red .team-panel-head {background:#f7f5ef;color:var(--mb-ink);border-bottom:1.5px solid #ddd8ce;padding:14px 13px}
+.tug-page .team-panel:first-child .team-panel-head {border-left:5px solid var(--mb-blue)}
+.tug-page .team-panel.red .team-panel-head {border-left:5px solid var(--mb-orange)}
+.tug-page .team-heading h2 {color:var(--mb-ink)}
+.tug-page .team-score-pill {background:var(--mb-blue);color:white;border-radius:7px}
+.tug-page .team-panel.red .team-score-pill {background:var(--mb-orange);color:#fff}
+.tug-page .question-label {color:#7b847e}
+.tug-page .question {color:var(--mb-blue)}
+.tug-page .red .question {color:var(--mb-orange)}
+.tug-page .answer-box, .tug-page .red .answer-box {background:#fffefa;border:1.5px solid #d4d1c9;color:var(--mb-ink);border-radius:8px}
+.tug-page .keypad button, .tug-page .red .keypad button, .tug-page .compare-key, .tug-page .red .compare-key {background:#f8f6ef;border:1px solid #ddd7cc;border-radius:8px;box-shadow:inset 0 -3px #eae4d9;color:var(--mb-ink)}
+.tug-page .keypad .key-delete, .tug-page .red .keypad .key-delete {background:#f8e9e3;color:#ad503c;box-shadow:inset 0 -3px #ead0c5}
+.tug-page .keypad .key-enter {background:var(--mb-blue);color:#fff;box-shadow:inset 0 -3px #30576a}
+.tug-page .red .keypad .key-enter {background:var(--mb-orange);color:#fff;box-shadow:inset 0 -3px #9e4e3a}
+.tug-page .keyboard-select.keyboard-active {border-color:var(--mb-blue);background:#edf2f0;color:var(--mb-ink)}
+.tug-page .arena {border-top:4px solid var(--mb-yellow);background:#fffdfa}
+.tug-page .arena-score strong, .tug-page .arena-clock time {color:var(--mb-ink)}
+.tug-page .arena-score.red-score strong {color:var(--mb-orange)}
+.tug-page .arena-score, .tug-page .arena-clock small, .tug-page .scene-description {color:#737a74}
+.tug-page .scene-caption {color:var(--mb-ink)}
+.tug-page .arena-bottom {background:#fbf9f4}
+.tug-page .rope-meter {background:linear-gradient(90deg,#b6d0d8,#f1ecdf,#ecc3b6);box-shadow:none;border:2px solid white}
+.tug-page .side-labels, .tug-page .side-labels span:last-child {color:var(--mb-ink)}
+.tug-page .meter-flag {background:var(--mb-ink)}
+.tug-page .result-overlay {background:#f5f1e8ed}
+.tug-page .result-card {background:var(--mb-paper);border:1.5px solid #343835;border-radius:12px;box-shadow:7px 8px 0 var(--mb-yellow)}
+.tug-page .result-card h2 {color:var(--mb-ink)}
+@media (max-width:760px) {
+
+.tug-page .team-panel, .tug-page .arena {box-shadow:3px 4px 0 #e8e1d6}}
+@media (max-width:450px) {.tug-page .app-shell {padding:9px}
+.tug-page .home-back-link {font-size:.69rem;padding:7px 12px}
+
+}

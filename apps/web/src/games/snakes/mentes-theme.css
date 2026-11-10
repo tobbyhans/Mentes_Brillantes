@@ -1,0 +1,169 @@
+/* MENTES BRILLANTES · Identidad visual de los juegos. Version 3.0
+   Se carga DESPUÉS del tema anterior y no afecta a las reglas. */
+.snakes-page {
+  --mb-ink:#282c2a; --mb-orange:#db6447; --mb-blue:#497d98; --mb-pink:#d95580;
+  --mb-yellow:#e3b64f; --mb-paper:#fdfcf8; --mb-cream:#f9f7f0;
+  --mb-line:#e5e1d7; --mb-muted:#6f7471;
+  font-family:"Trebuchet MS","Avenir Next",Avenir,system-ui,sans-serif;
+  color:var(--mb-ink); background:#fbfaf7;
+}
+.snakes-page { color:var(--mb-ink); background-color:#fbfaf7; }
+.snakes-page .app-shell {
+  background-color:#fbfaf7;
+  background-image:linear-gradient(to right,#e6e5e0 1px,transparent 1px),linear-gradient(to bottom,#e6e5e0 1px,transparent 1px);
+  background-size:24px 24px;
+  padding:clamp(12px,2.2vw,28px);
+}
+.snakes-page .app-inner { max-width:1540px; }
+.snakes-page .home-back-link {
+  display:inline-flex;align-items:center;gap:7px;margin:0 0 12px;
+  border:1.5px solid #343835;border-radius:999px;padding:9px 16px;
+  background:var(--mb-paper);color:var(--mb-ink);box-shadow:none;
+  font-size:12px;font-weight:850;letter-spacing:.01em;text-decoration:none;
+  transition:background .2s,transform .2s;
+}
+.snakes-page .home-back-link:hover {background:#f5efe5;transform:translateX(-2px)}
+.snakes-page .home-back-link:focus-visible {outline:3px solid var(--mb-blue);outline-offset:3px}
+.snakes-page .site-header {
+  background:var(--mb-cream);border-bottom:1px solid #dcd8cd;
+  padding:14px clamp(14px,2.4vw,28px);margin:0 0 16px;
+  border-radius:10px 10px 0 0;
+  gap:16px;min-height:92px;
+}
+.snakes-page .brand-wrap {gap:13px}
+.snakes-page .brand-icon {
+  min-width:66px;width:66px;height:66px;padding:8px;
+  background:#fffdfa;border:1.5px solid #333835;
+  border-radius:12px;box-shadow:none;flex:none;
+}
+.snakes-page .brand-icon svg {display:block;width:100%;height:100%;overflow:visible}
+.snakes-page .brand-copy h1, .snakes-page h1 {
+  font-size:clamp(1.27rem,2.25vw,2.18rem);color:var(--mb-ink);
+  letter-spacing:-.065em;line-height:1.05;margin:3px 0;
+}
+.snakes-page .brand-copy h1::first-letter, .snakes-page h1::first-letter {color:var(--mb-ink)}
+.snakes-page .title-and {color:var(--mb-orange)}
+.snakes-page .brand-eyebrow, .snakes-page .brand-accent, .snakes-page .panel-kicker, .snakes-page .small-eyebrow {
+  color:var(--mb-blue);letter-spacing:.17em;font-weight:900;font-size:.65rem;
+}
+.snakes-page .brand-accent {color:var(--mb-orange);letter-spacing:.1em;font-size:.58rem}
+.snakes-page .header-art {opacity:.65;max-width:200px;filter:saturate(.8)}
+.snakes-page .sound-btn, .snakes-page .settings-btn {
+  background:var(--mb-paper);border:1.5px solid #d5d0c5;border-radius:999px;
+  color:var(--mb-ink);box-shadow:none;padding:10px 15px;
+  font-size:.95rem;transition:background .2s,transform .15s;
+}
+.snakes-page .settings-btn[hidden] {display:none!important}
+.snakes-page .sound-btn.enabled {color:var(--mb-blue);background:#f3f7f6;border-color:#9eb4b9}
+.snakes-page .sound-btn:hover, .snakes-page .settings-btn:hover {background:#f3f0e9;transform:translateY(-2px)}
+.snakes-page .game-layout {gap:clamp(12px,2vw,24px);align-items:start}
+.snakes-page .board-column, .snakes-page .side-panel {
+  background:var(--mb-paper);border:1.5px solid #d9d4c9;border-radius:18px;
+  box-shadow:5px 6px 0 #e7e2d8;
+}
+.snakes-page .board-column {padding:clamp(10px,1.25vw,18px)}
+.snakes-page .board-column::before, .snakes-page .side-panel::before {background:linear-gradient(90deg,var(--mb-orange),var(--mb-yellow),var(--mb-blue));height:4px;opacity:1}
+.snakes-page .board-frame {max-width:710px}
+.snakes-page .board-halo {inset:-3px;opacity:.25;background:#b1b1a7;filter:blur(2px)}
+.snakes-page .board {
+  border:4px solid #fffdfa;outline:1.5px solid #343835;border-radius:8px;
+  background:var(--mb-paper);box-shadow:0 7px 0 #d9d1c5;
+}
+.snakes-page .square {border:.65px solid rgba(86,90,82,.15)}
+.snakes-page .tile-0 {background:#e4eef1}
+.snakes-page .tile-1 {background:#f8edda}
+.snakes-page .tile-2 {background:#f4e8e2}
+.snakes-page .tile-3 {background:#e8eee5}
+.snakes-page .square-ladder {background:#f2e6c5}
+.snakes-page .square-snake {background:#f6e0dc}
+.snakes-page .square-finish {background:#f5dc8b}
+.snakes-page .square-number {color:#606a68;text-shadow:none;font-weight:900}
+.snakes-page .square-finish .square-number {color:#75511d}
+.snakes-page .ladder-art {filter:drop-shadow(1px 2px 0 #867b6d75)}
+.snakes-page .snake-art {filter:drop-shadow(1px 2px 0 #6d6d6870)}
+.snakes-page .player-token {box-shadow:0 3px 0 #3338354a,0 0 0 1px #333835; border-width:3px}
+.snakes-page .token-0 {background:#497d98}
+.snakes-page .token-1 {background:var(--mb-pink)}
+.snakes-page .board-foot {color:var(--mb-muted);font-size:.73rem;padding:15px 3px 3px}
+.snakes-page .legend-blue {background:var(--mb-blue)}
+.snakes-page .legend-pink {background:var(--mb-pink)}
+.snakes-page .legend-mid {color:#777c77}
+.snakes-page .side-panel {padding:clamp(17px,2.1vw,29px)}
+.snakes-page .side-panel h2 {color:var(--mb-ink);font-size:clamp(1.35rem,2vw,1.82rem);letter-spacing:-.052em}
+.snakes-page .panel-intro, .snakes-page .small-note {color:#747974}
+.snakes-page .section-divider {background:#e2ddd3}
+.snakes-page .field-title {color:#454c49}
+.snakes-page .team-field {background:#fffdfa;border:1.5px solid #dcd6c9;border-radius:11px}
+.snakes-page .team-blue {border-left:5px solid var(--mb-blue)}
+.snakes-page .team-pink {border-left:5px solid var(--mb-pink)}
+.snakes-page .team-field input {background:white;border:1px solid #d6d1c8;color:var(--mb-ink)}
+.snakes-page .op-option, .snakes-page .difficulty-row button {
+  background:#fffdfa;color:var(--mb-ink);border:1.5px solid #ddd8cd;
+  border-radius:10px;box-shadow:none;transition:border-color .2s,background .2s,transform .15s;
+}
+.snakes-page .op-option.selected, .snakes-page .difficulty-row button.chosen {background:#edf2f0;border-color:var(--mb-blue);box-shadow:inset 0 0 0 1px var(--mb-blue)}
+.snakes-page .op-option.selected strong {color:var(--mb-blue)}
+.snakes-page .op-option:hover, .snakes-page .difficulty-row button:hover {transform:translateY(-2px)}
+.snakes-page .primary-btn {
+  background:var(--mb-ink);color:#fffefa;border:1.5px solid var(--mb-ink);
+  border-radius:9px;box-shadow:4px 5px 0 var(--mb-yellow);font-weight:900;
+  letter-spacing:.02em;transition:transform .15s,box-shadow .15s;
+}
+.snakes-page .primary-btn:hover {background:#3c4640;transform:translate(-1px,-2px);box-shadow:5px 7px 0 var(--mb-yellow)}
+.snakes-page .primary-btn:active {transform:translate(2px,3px);box-shadow:1px 2px 0 var(--mb-yellow)}
+.snakes-page .score-list {gap:10px}
+.snakes-page .score-row {
+  border:1.5px solid #ddd8cc;border-radius:10px;background:#fffdfa;
+  box-shadow:none;
+}
+.snakes-page .score-row.score-active.score-blue {border-color:var(--mb-blue);background:#edf2f3}
+.snakes-page .score-row.score-active.score-pink {border-color:var(--mb-pink);background:#fff0f5}
+.snakes-page .score-marker {background:var(--mb-blue);border-radius:7px;box-shadow:none}
+.snakes-page .score-pink .score-marker {background:var(--mb-pink)}
+.snakes-page .score-label strong, .snakes-page .score-pos strong {color:var(--mb-ink)}
+.snakes-page .score-label small, .snakes-page .score-pos small {color:#777b75}
+.snakes-page .score-pos strong {color:var(--mb-blue)}
+.snakes-page .score-pink .score-pos strong {color:var(--mb-pink)}
+.snakes-page .turn-card {background:#f6f5ee;border:1.5px dashed #c7c8bc;border-radius:13px;box-shadow:none}
+.snakes-page .turn-pink {background:#fff4f8;border-color:#e6a8bf}
+.snakes-page .turn-header strong, .snakes-page .question-text {color:var(--mb-blue)}
+.snakes-page .turn-pink .turn-header strong, .snakes-page .turn-pink .question-text {color:var(--mb-pink)}
+.snakes-page .turn-header span, .snakes-page .question-kicker {color:#7b8079}
+.snakes-page .dice-face {border:2px solid var(--mb-ink);box-shadow:4px 5px 0 #ddd3c0;border-radius:10px}
+.snakes-page .die-dot.visible {background:var(--mb-blue);box-shadow:none}
+.snakes-page .turn-pink .die-dot.visible {background:var(--mb-pink)}
+.snakes-page .dice-reminder .dice-face {border:2px solid var(--mb-ink);box-shadow:2px 3px 0 #ddd3c0}
+.snakes-page .dice-reminder strong {color:var(--mb-ink)}
+.snakes-page .answer-row input {
+  border:1.5px solid #bfc7c2;background:#fffefa;border-radius:9px;
+  color:var(--mb-ink);box-shadow:none;
+}
+.snakes-page .answer-row input:focus {border-color:var(--mb-blue);outline:3px solid #a5c2c64b}
+.snakes-page .numberpad button {
+  background:#fffdfa;color:var(--mb-ink);border:1px solid #d9d4c9;
+  border-radius:8px;box-shadow:inset 0 -3px #e6dfd4;
+}
+.snakes-page .numberpad .key-erase {background:#f7e7e4;color:#ae4e3e;box-shadow:inset 0 -3px #e8c6bf}
+.snakes-page .numberpad .key-submit, .snakes-page .turn-pink .numberpad .key-submit {background:var(--mb-blue);color:#fff;box-shadow:inset 0 -3px #35687d}
+.snakes-page .turn-pink .numberpad .key-submit {background:var(--mb-pink);box-shadow:inset 0 -3px #b9466a}
+.snakes-page .win-heading {color:var(--mb-ink)}
+.snakes-page .footer-note {color:#727671;font-size:.72rem}
+@media (max-width:1040px) {.snakes-page .site-header {flex-wrap:wrap}
+.snakes-page .header-art {max-width:165px}}
+@media (max-width:780px) {.snakes-page .site-header {padding:13px;border-radius:9px}
+.snakes-page .header-art {display:none}
+.snakes-page .game-layout {gap:14px}
+.snakes-page .board-column, .snakes-page .side-panel {box-shadow:3px 4px 0 #e7e2d8}
+.snakes-page .board-column {order:1!important}
+.snakes-page .side-panel {order:2!important}}
+@media (max-width:460px) {.snakes-page .app-shell {padding:9px}
+.snakes-page .brand-icon {width:45px;min-width:45px;height:45px;padding:5px}
+.snakes-page .brand-wrap {gap:8px}
+.snakes-page .brand-copy h1 {font-size:clamp(1.02rem,4.2vw,1.42rem)}
+.snakes-page .brand-eyebrow {font-size:.49rem}
+.snakes-page .brand-accent {font-size:.46rem}
+.snakes-page .home-back-link {font-size:.69rem;padding:7px 12px}
+.snakes-page .sound-btn, .snakes-page .settings-btn {padding:7px 11px}
+.snakes-page .side-panel {padding:16px 12px}
+.snakes-page .board-column {padding:9px}}
+@media (prefers-reduced-motion:reduce) {.snakes-page .home-back-link, .snakes-page .sound-btn, .snakes-page .settings-btn, .snakes-page .primary-btn {transition:none}}

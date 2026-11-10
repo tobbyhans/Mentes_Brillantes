@@ -1,0 +1,19 @@
+<svg viewBox="0 0 520 365" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="270" cy="182" rx="222" ry="101" transform="rotate(-25 270 182)" stroke="#cbc8be" stroke-width="1.5" stroke-dasharray="5 8"/>
+          <ellipse cx="268" cy="184" rx="162" ry="73" transform="rotate(23 268 184)" stroke="#e2dfd6" stroke-width="1.5"/>
+          <circle cx="283" cy="183" r="94" fill="#f2eee3" stroke="#303433" stroke-width="2"/>
+          <path d="M208 226c33-15 72-19 111-6 28 9 43 20 54 24" stroke="#42728c" stroke-width="15" stroke-linecap="round"/>
+          <path d="M209 181c25-10 48-11 62-9 31 4 55 19 100 4" stroke="#db6546" stroke-width="15" stroke-linecap="round"/>
+          <path d="M244 108c-8 8-13 18-16 29M330 260c-7 5-14 7-22 10" stroke="#e3b64f" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="281" cy="131" r="7" fill="#e3b64f"/><circle cx="325" cy="211" r="6" fill="#f2eee3" stroke="#303433" stroke-width="1.7"/>
+          <!-- Cohete muy simplificado -->
+          <g transform="translate(70 77) rotate(-25 56 43)"><path d="m44 0 31 37-31 0Z" fill="#db6546"/><rect x="44" y="37" width="31" height="48" fill="#42728c"/><rect x="31" y="63" width="13" height="24" fill="#e3b64f"/><rect x="75" y="63" width="13" height="24" fill="#e3b64f"/><circle cx="59" cy="52" r="7" fill="#faf9f4" stroke="#303433" stroke-width="1.8"/><path d="M49 85 55 103 59 92 65 103 70 85" fill="#e3b64f"/><path d="M43 37h32" stroke="#303433" stroke-width="1.6"/></g>
+          <!-- pequeña estrella, triángulos, planeta y marcas a mano -->
+          <circle cx="433" cy="82" r="27" fill="#e3b64f"/><path d="M399 82c22 7 48 10 69-8" stroke="#303433" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="m454 160 6 13 14 4-14 5-6 13-5-13-14-5 14-4Z" fill="#db6546"/>
+          <path d="M67 259 79 235 90 259Z" stroke="#42728c" stroke-width="2"/><circle cx="96" cy="271" r="4" fill="#db6546"/>
+          <path d="m427 299 1 15m-8-7 16 0" stroke="#42728c" stroke-width="2" stroke-linecap="round"/>
+          <path d="M162 318c9-6 18-6 27 0 8-6 17-6 26 0" stroke="#e3b64f" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="387" cy="36" r="3" fill="#db6546"/><circle cx="184" cy="24" r="3.5" fill="#42728c"/><circle cx="490" cy="245" r="3.5" fill="#42728c"/>
+          <path d="m352 327 12-19 12 19Z" fill="#db6546"/>
+        </svg>

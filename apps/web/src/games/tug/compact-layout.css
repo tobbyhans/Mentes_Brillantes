@@ -1,0 +1,54 @@
+/* Tira y Afloja · Diseño compacto sin cabecera.
+   Conserva la estética Mentes Brillantes y prioriza el área de juego. */
+.tug-page .visually-hidden {
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+}
+.tug-page .app-shell { min-height:100vh; padding-top:clamp(10px,1.35vw,19px); }
+.tug-page .tug-utility-bar {
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  flex-wrap:wrap; padding:0 0 11px; margin:0 auto 10px;
+  max-width:1160px; border-bottom:1px solid #e1ddd3;
+}
+.tug-page .tug-utility-bar .home-back-link { margin:0; flex:0 0 auto; }
+.tug-page .tug-utility-bar .header-tools { margin-left:auto; display:flex; gap:8px; align-items:center; flex-wrap:wrap; justify-content:flex-end; }
+.tug-page .setup-wrap { max-width:1000px; margin:8px auto 0; }
+.tug-page .setup-card { overflow:hidden; }
+.tug-page .stepper { padding:clamp(10px,1.2vw,15px); }
+.tug-page .setup-content { min-height:clamp(315px,43vh,390px); }
+.tug-page .game-main { padding-top:0; }
+@media (max-width:760px) {
+  .tug-page .tug-utility-bar { gap:8px; }
+  .tug-page .setup-wrap { margin-top:5px; }
+  .tug-page .tug-utility-bar .header-tools { width:auto; }
+}
+@media (max-width:450px) {
+  .tug-page .tug-utility-bar { align-items:center; }
+  .tug-page .tug-utility-bar .home-back-link { font-size:.72rem; padding:8px 10px; }
+  .tug-page .tug-utility-bar .header-tools { gap:6px; }
+  .tug-page .setup-content { min-height:330px; }
+}
+
+/* Dos botones independientes de sonido (paridad visual con Serpientes y Escaleras). */
+.tug-page .tug-audio-buttons { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.tug-page .tug-audio-buttons .sound-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  min-height: 43px; padding: 9px 15px; border-radius: 999px;
+  border: 1.5px solid #d5d0c5; background: #fdfcf8; color: #282c2a;
+  box-shadow: none; font-size: .95rem; font-weight: 800; white-space: nowrap;
+  transition: background .2s, transform .15s, border-color .2s;
+}
+.tug-page .tug-audio-buttons .sound-btn span:first-child { font-size: 1.18rem; line-height: 1; }
+.tug-page .tug-audio-buttons .sound-btn.enabled {
+  color: #497d98; background: #f3f7f6; border-color: #9eb4b9;
+}
+.tug-page .tug-audio-buttons .sound-btn:hover { background: #f3f0e9; transform: translateY(-2px); }
+.tug-page .tug-audio-buttons .sound-btn:active { transform: translateY(0); }
+.tug-page .tug-audio-buttons .sound-btn:focus-visible { outline: 3px solid #db6447; outline-offset: 2px; }
+@media (max-width: 450px) {
+  .tug-page .tug-audio-buttons { gap: 6px; }
+  .tug-page .tug-audio-buttons .sound-btn { padding: 8px 10px; min-height: 40px; font-size: .82rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tug-page .tug-audio-buttons .sound-btn { transition: none; }
+}
